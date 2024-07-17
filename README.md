@@ -4,10 +4,18 @@ A Knowledge Graph-Powered Research Assistant for Polymer Science (KGWRAPS) seeks
 2. Enable graph analytics by allowing analyses of polymers based on specific properties or environmental conditions, and
 3. Identify knowledge gaps and make predictions about the relationships between polymer properties and experimental conditions.
 
-## More Information
-More details about the topic this project explores can be found in the Defense Associated Graduate Student Innovators (DAGSI) Topic # [RX24-22](https://github.com/kastle-lab/KGWRAPS/blob/master/RX22-24.pdf) while more information about the project itself can be found in the [proposal](https://github.com/kastle-lab/KGWRAPS/blob/master/2024_dagsi_kgwraps.pdf).
+## Repository Information
+* `resources/` -- contains assets tangentially related to this project, including data, topic information, and literature
+* `publications/` -- contains publications pertaining to this project
+* `schema/` -- contains both the schema diagrams and the formalization of the KGWRAPS conversational model
 
-## Contributors
-AFRL Sponsor: Dr. Jeffrey Ethier  
-Principal Investigator: Dr. Cogan Shimizu  
-Student: Anmol Saini  
+## Project Team & Contributors
+* Anmol Saini <br />
+  Wright State University <br />
+* Jeffrey Ethier <br />
+  Air Force Research Laboratory
+* Cogan Shimizu <br />
+  Wright State University
+
+## More Information
+For more details about this project, please see the Defense Associated Graduate Student Innovators (DAGSI) [Topic CfP RX24-22](./resources/proposal/RX22-24.pdf) and our [proposal](./resources/proposal/2024_dagsi_kgwraps.pdf).
