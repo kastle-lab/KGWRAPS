@@ -1,0 +1,659 @@
+@prefix : <http://www.semanticweb.org/anmolsaini/ontologies/2024/6/untitled-ontology-4> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <http://www.semanticweb.org/anmolsaini/ontologies/2024/6/untitled-ontology-4> .
+
+<http://www.semanticweb.org/anmolsaini/ontologies/2024/6/untitled-ontology-4> rdf:type owl:Ontology .
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://www.semanticweb.org/anmolsaini/ontologies/2024/6/untitled-ontology-4#activates
+:activates rdf:type owl:ObjectProperty ;
+           rdfs:domain <http://www.semanticweb.org/anmolsaini/ontologies/2024/6/untitled-ontology-4#Intent_(Info)> ;
+           rdfs:range :StatusItem .
+
+
+###  http://www.semanticweb.org/anmolsaini/ontologies/2024/6/untitled-ontology-4#actsOnProperty
+:actsOnProperty rdf:type owl:ObjectProperty ;
+                rdfs:domain :Actuation ,
+                            :Actuator ;
+                rdfs:range :ActuatableProperty .
+
+
+###  http://www.semanticweb.org/anmolsaini/ontologies/2024/6/untitled-ontology-4#classOfInstance
+:classOfInstance rdf:type owl:ObjectProperty ;
+                 rdfs:domain :Class ;
+                 rdfs:range :Instance .
+
+
+###  http://www.semanticweb.org/anmolsaini/ontologies/2024/6/untitled-ontology-4#determines
+:determines rdf:type owl:ObjectProperty ;
+            rdfs:domain :Keyword ;
+            rdfs:range <http://www.semanticweb.org/anmolsaini/ontologies/2024/6/untitled-ontology-4#Intent_(Purpose)> .
+
+
+###  http://www.semanticweb.org/anmolsaini/ontologies/2024/6/untitled-ontology-4#hasAction
+:hasAction rdf:type owl:ObjectProperty ;
+           rdfs:domain :Print ;
+           rdfs:range :AdustSyringeExtruderCarriageAction ,
+                      :BeginPrintingAction ,
+                      :CameraAlignmentAction ,
+                      :CleanSubstrateAction ,
+                      :DisplayResultsSummaryAction ,
+                      :HomingRoutineAction ,
+                      :InstallBarrelClampAssemblyAction ,
+                      :InstallDispensingTipAction ,
+                      :InstallSyringePlungerAction ,
+                      :LoadSyringeAction ,
+                      :PurgeDispensingTipAction ,
+                      :RunPrintCampaignAction ,
+                      :SelectParametersAction ,
+                      :SelectToolpathAction .
+
+
+###  http://www.semanticweb.org/anmolsaini/ontologies/2024/6/untitled-ontology-4#hasBot
+:hasBot rdf:type owl:ObjectProperty ;
+        rdfs:domain :DialogStatus ;
+        rdfs:range :Agent .
+
+
+###  http://www.semanticweb.org/anmolsaini/ontologies/2024/6/untitled-ontology-4#hasDialogAction
+:hasDialogAction rdf:type owl:ObjectProperty ;
+                 rdfs:domain :DialogStatus ;
+                 rdfs:range :DialogAction .
+
+
+###  http://www.semanticweb.org/anmolsaini/ontologies/2024/6/untitled-ontology-4#hasFeatureOfInterest
+:hasFeatureOfInterest rdf:type owl:ObjectProperty ;
+                      rdfs:domain :Actuation ,
+                                  :Observation ;
+                      rdfs:range :FeatureOfInterest .
+
+
+###  http://www.semanticweb.org/anmolsaini/ontologies/2024/6/untitled-ontology-4#hasFeedback
+:hasFeedback rdf:type owl:ObjectProperty ;
+             rdfs:domain :Dialog ,
+                         :DialogAction ;
+             rdfs:range :Feedback .
+
+
+###  http://www.semanticweb.org/anmolsaini/ontologies/2024/6/untitled-ontology-4#hasFormulation
+:hasFormulation rdf:type owl:ObjectProperty ;
+                rdfs:domain :Instance ;
+                rdfs:range :Formulation .
+
+
+###  http://www.semanticweb.org/anmolsaini/ontologies/2024/6/untitled-ontology-4#hasInput
+:hasInput rdf:type owl:ObjectProperty ;
+          rdfs:domain :MaterialTransformation ;
+          rdfs:range :Input .
+
+
+###  http://www.semanticweb.org/anmolsaini/ontologies/2024/6/untitled-ontology-4#hasIntent
+:hasIntent rdf:type owl:ObjectProperty ;
+           rdfs:domain owl:Thing ;
+           rdfs:range <http://www.semanticweb.org/anmolsaini/ontologies/2024/6/untitled-ontology-4#Intent_(Info)> .
+
+
+###  http://www.semanticweb.org/anmolsaini/ontologies/2024/6/untitled-ontology-4#hasOutput
+:hasOutput rdf:type owl:ObjectProperty ;
+           rdfs:domain :MaterialTransformation ;
+           rdfs:range :Output .
+
+
+###  http://www.semanticweb.org/anmolsaini/ontologies/2024/6/untitled-ontology-4#hasProperty
+:hasProperty rdf:type owl:ObjectProperty ;
+             rdfs:domain :FeatureOfInterest ;
+             rdfs:range :ActuatableProperty ,
+                        :ObservableProperty .
+
+
+###  http://www.semanticweb.org/anmolsaini/ontologies/2024/6/untitled-ontology-4#hasQuestion
+:hasQuestion rdf:type owl:ObjectProperty ;
+             rdfs:domain :Dialog ,
+                         :DialogAction ;
+             rdfs:range :Question .
+
+
+###  http://www.semanticweb.org/anmolsaini/ontologies/2024/6/untitled-ontology-4#hasRecognizedIntent
+:hasRecognizedIntent rdf:type owl:ObjectProperty ;
+                     rdfs:subPropertyOf :hasIntent ;
+                     rdfs:domain :UserEvent ;
+                     rdfs:range <http://www.semanticweb.org/anmolsaini/ontologies/2024/6/untitled-ontology-4#Intent_(Info)> .
+
+
+###  http://www.semanticweb.org/anmolsaini/ontologies/2024/6/untitled-ontology-4#hasRelevantIntent
+:hasRelevantIntent rdf:type owl:ObjectProperty ;
+                   rdfs:subPropertyOf :hasIntent ;
+                   rdfs:domain :Question ;
+                   rdfs:range <http://www.semanticweb.org/anmolsaini/ontologies/2024/6/untitled-ontology-4#Intent_(Info)> .
+
+
+###  http://www.semanticweb.org/anmolsaini/ontologies/2024/6/untitled-ontology-4#hasResult
+:hasResult rdf:type owl:ObjectProperty ;
+           rdfs:domain :Actuation ,
+                       :Observation ;
+           rdfs:range :Result .
+
+
+###  http://www.semanticweb.org/anmolsaini/ontologies/2024/6/untitled-ontology-4#hasStatusItem
+:hasStatusItem rdf:type owl:ObjectProperty ;
+               rdfs:domain :UserStatus ;
+               rdfs:range :StatusItem .
+
+
+###  http://www.semanticweb.org/anmolsaini/ontologies/2024/6/untitled-ontology-4#hasTimestamp
+:hasTimestamp rdf:type owl:ObjectProperty ;
+              rdfs:domain :Event ;
+              rdfs:range [ rdf:type owl:Restriction ;
+                           owl:onProperty owl:topDataProperty ;
+                           owl:someValuesFrom xsd:long
+                         ] .
+
+
+###  http://www.semanticweb.org/anmolsaini/ontologies/2024/6/untitled-ontology-4#hasTriggerQuestion
+:hasTriggerQuestion rdf:type owl:ObjectProperty ;
+                    rdfs:domain :UserEvent ;
+                    rdfs:range :Question .
+
+
+###  http://www.semanticweb.org/anmolsaini/ontologies/2024/6/untitled-ontology-4#hasUser
+:hasUser rdf:type owl:ObjectProperty ;
+         rdfs:domain :DialogStatus ;
+         rdfs:range :User .
+
+
+###  http://www.semanticweb.org/anmolsaini/ontologies/2024/6/untitled-ontology-4#hasUserEvent
+:hasUserEvent rdf:type owl:ObjectProperty ;
+              rdfs:domain :UserStatus ;
+              rdfs:range :UserEvent .
+
+
+###  http://www.semanticweb.org/anmolsaini/ontologies/2024/6/untitled-ontology-4#hasUserStatus
+:hasUserStatus rdf:type owl:ObjectProperty ;
+               rdfs:domain :User ;
+               rdfs:range :UserStatus .
+
+
+###  http://www.semanticweb.org/anmolsaini/ontologies/2024/6/untitled-ontology-4#involvesMaterial
+:involvesMaterial rdf:type owl:ObjectProperty ;
+                  rdfs:domain :Action ;
+                  rdfs:range :Instance .
+
+
+###  http://www.semanticweb.org/anmolsaini/ontologies/2024/6/untitled-ontology-4#isActivated
+:isActivated rdf:type owl:ObjectProperty ;
+             rdfs:domain :StatusItem ,
+                         :UserStatus ;
+             rdfs:range [ rdf:type owl:Restriction ;
+                          owl:onProperty owl:topDataProperty ;
+                          owl:someValuesFrom xsd:int
+                        ] .
+
+
+###  http://www.semanticweb.org/anmolsaini/ontologies/2024/6/untitled-ontology-4#madeActuation
+:madeActuation rdf:type owl:ObjectProperty ;
+               rdfs:domain :Actuator ;
+               rdfs:range :Actuation .
+
+
+###  http://www.semanticweb.org/anmolsaini/ontologies/2024/6/untitled-ontology-4#madeObservation
+:madeObservation rdf:type owl:ObjectProperty ;
+                 rdfs:domain :Sensor ;
+                 rdfs:range :Observation .
+
+
+###  http://www.semanticweb.org/anmolsaini/ontologies/2024/6/untitled-ontology-4#observedProperty
+:observedProperty rdf:type owl:ObjectProperty ;
+                  rdfs:domain :Observation ;
+                  rdfs:range :ObservableProperty .
+
+
+###  http://www.semanticweb.org/anmolsaini/ontologies/2024/6/untitled-ontology-4#observes
+:observes rdf:type owl:ObjectProperty ;
+          rdfs:domain :Sensor ;
+          rdfs:range :ObservableProperty .
+
+
+###  http://www.semanticweb.org/anmolsaini/ontologies/2024/6/untitled-ontology-4#occursDuring
+:occursDuring rdf:type owl:ObjectProperty ;
+              rdfs:domain :MaterialTransformation ;
+              rdfs:range :Interval .
+
+
+###  http://www.semanticweb.org/anmolsaini/ontologies/2024/6/untitled-ontology-4#occursInNeighborhood
+:occursInNeighborhood rdf:type owl:ObjectProperty ;
+                      rdfs:domain :MaterialTransformation ;
+                      rdfs:range :Neighborhood .
+
+
+###  http://www.semanticweb.org/anmolsaini/ontologies/2024/6/untitled-ontology-4#performedEvent
+:performedEvent rdf:type owl:ObjectProperty ;
+                rdfs:domain :Actor ;
+                rdfs:range :Event .
+
+
+###  http://www.semanticweb.org/anmolsaini/ontologies/2024/6/untitled-ontology-4#precedes
+:precedes rdf:type owl:ObjectProperty ;
+          rdfs:domain :AdustSyringeExtruderCarriageAction ,
+                      :BeginPrintingAction ,
+                      :CameraAlignmentAction ,
+                      :CleanSubstrateAction ,
+                      :HomingRoutineAction ,
+                      :InstallBarrelClampAssemblyAction ,
+                      :InstallDispensingTipAction ,
+                      :InstallSyringePlungerAction ,
+                      :LoadSyringeAction ,
+                      :PurgeDispensingTipAction ,
+                      :RunPrintCampaignAction ,
+                      :SelectParametersAction ,
+                      :SelectToolpathAction ;
+          rdfs:range :BeginPrintingAction ,
+                     :DisplayResultsSummaryAction ,
+                     :HomingRoutineAction ,
+                     :InstallBarrelClampAssemblyAction ,
+                     :InstallDispensingTipAction ,
+                     :InstallSyringePlungerAction ,
+                     :PurgeDispensingTipAction ,
+                     :RunPrintCampaignAction ,
+                     :SelectParametersAction .
+
+
+###  http://www.semanticweb.org/anmolsaini/ontologies/2024/6/untitled-ontology-4#receivedAnswer
+:receivedAnswer rdf:type owl:ObjectProperty ;
+                rdfs:subPropertyOf :performedEvent ;
+                rdfs:domain :Actor ;
+                rdfs:range :EventAnswer .
+
+
+###  http://www.semanticweb.org/anmolsaini/ontologies/2024/6/untitled-ontology-4#receivedQuestion
+:receivedQuestion rdf:type owl:ObjectProperty ;
+                  rdfs:subPropertyOf :performedEvent ;
+                  rdfs:domain :Actor ;
+                  rdfs:range :EventQuestion .
+
+
+###  http://www.semanticweb.org/anmolsaini/ontologies/2024/6/untitled-ontology-4#refersToDialog
+:refersToDialog rdf:type owl:ObjectProperty ;
+                rdfs:domain :DialogStatus ;
+                rdfs:range :Dialog .
+
+
+###  http://www.semanticweb.org/anmolsaini/ontologies/2024/6/untitled-ontology-4#sentAnswer
+:sentAnswer rdf:type owl:ObjectProperty ;
+            rdfs:subPropertyOf :performedEvent ;
+            rdfs:domain :Actor ;
+            rdfs:range :EventAnswer .
+
+
+###  http://www.semanticweb.org/anmolsaini/ontologies/2024/6/untitled-ontology-4#sentQuestion
+:sentQuestion rdf:type owl:ObjectProperty ;
+              rdfs:subPropertyOf :performedEvent ;
+              rdfs:domain :Actor ;
+              rdfs:range :EventQuestion .
+
+
+###  http://www.semanticweb.org/anmolsaini/ontologies/2024/6/untitled-ontology-4#triggers
+:triggers rdf:type owl:ObjectProperty ;
+          rdfs:domain :UserEvent ,
+                      <http://www.semanticweb.org/anmolsaini/ontologies/2024/6/untitled-ontology-4#Intent_(Info)> ;
+          rdfs:range :DialogAction ,
+                     :UserStatus .
+
+
+###  http://www.semanticweb.org/anmolsaini/ontologies/2024/6/untitled-ontology-4#untilAmount
+:untilAmount rdf:type owl:ObjectProperty ;
+             rdfs:domain :LoadSyringeAction ;
+             rdfs:range :Amount .
+
+
+###  http://www.semanticweb.org/anmolsaini/ontologies/2024/6/untitled-ontology-4#usesApparatus
+:usesApparatus rdf:type owl:ObjectProperty ;
+               rdfs:domain :Action ;
+               rdfs:range :Apparatus .
+
+
+###  http://www.semanticweb.org/anmolsaini/ontologies/2024/6/untitled-ontology-4#waitTime
+:waitTime rdf:type owl:ObjectProperty ;
+          rdfs:domain :DialogAction ;
+          rdfs:range [ rdf:type owl:Restriction ;
+                       owl:onProperty owl:topDataProperty ;
+                       owl:someValuesFrom xsd:int
+                     ] .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://www.semanticweb.org/anmolsaini/ontologies/2024/6/untitled-ontology-4#Action
+:Action rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/anmolsaini/ontologies/2024/6/untitled-ontology-4#Actor
+:Actor rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/anmolsaini/ontologies/2024/6/untitled-ontology-4#ActuatableProperty
+:ActuatableProperty rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/anmolsaini/ontologies/2024/6/untitled-ontology-4#Actuation
+:Actuation rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/anmolsaini/ontologies/2024/6/untitled-ontology-4#Actuator
+:Actuator rdf:type owl:Class ;
+          rdfs:subClassOf :Apparatus .
+
+
+###  http://www.semanticweb.org/anmolsaini/ontologies/2024/6/untitled-ontology-4#AdustSyringeExtruderCarriageAction
+:AdustSyringeExtruderCarriageAction rdf:type owl:Class ;
+                                    rdfs:subClassOf :Action ,
+                                                    :Procedure .
+
+
+###  http://www.semanticweb.org/anmolsaini/ontologies/2024/6/untitled-ontology-4#Agent
+:Agent rdf:type owl:Class ;
+       rdfs:subClassOf :Actor .
+
+
+###  http://www.semanticweb.org/anmolsaini/ontologies/2024/6/untitled-ontology-4#Amount
+:Amount rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/anmolsaini/ontologies/2024/6/untitled-ontology-4#Apparatus
+:Apparatus rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/anmolsaini/ontologies/2024/6/untitled-ontology-4#BeginPrintingAction
+:BeginPrintingAction rdf:type owl:Class ;
+                     rdfs:subClassOf :Action ,
+                                     :Procedure .
+
+
+###  http://www.semanticweb.org/anmolsaini/ontologies/2024/6/untitled-ontology-4#CameraAlignmentAction
+:CameraAlignmentAction rdf:type owl:Class ;
+                       rdfs:subClassOf :Action ,
+                                       :Procedure .
+
+
+###  http://www.semanticweb.org/anmolsaini/ontologies/2024/6/untitled-ontology-4#Catalyst
+:Catalyst rdf:type owl:Class ;
+          rdfs:subClassOf :Input ,
+                          :Output .
+
+
+###  http://www.semanticweb.org/anmolsaini/ontologies/2024/6/untitled-ontology-4#Class
+:Class rdf:type owl:Class ;
+       rdfs:subClassOf <http://www.semanticweb.org/anmolsaini/ontologies/2024/6/untitled-ontology-4#Intent_(Info)> .
+
+
+###  http://www.semanticweb.org/anmolsaini/ontologies/2024/6/untitled-ontology-4#CleanSubstrateAction
+:CleanSubstrateAction rdf:type owl:Class ;
+                      rdfs:subClassOf :Action ,
+                                      :Procedure .
+
+
+###  http://www.semanticweb.org/anmolsaini/ontologies/2024/6/untitled-ontology-4#Compare
+:Compare rdf:type owl:Class ;
+         rdfs:subClassOf :ComplexIntent .
+
+
+###  http://www.semanticweb.org/anmolsaini/ontologies/2024/6/untitled-ontology-4#ComplexIntent
+:ComplexIntent rdf:type owl:Class ;
+               rdfs:subClassOf <http://www.semanticweb.org/anmolsaini/ontologies/2024/6/untitled-ontology-4#Intent_(Purpose)> .
+
+
+###  http://www.semanticweb.org/anmolsaini/ontologies/2024/6/untitled-ontology-4#ConversationItem
+:ConversationItem rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/anmolsaini/ontologies/2024/6/untitled-ontology-4#Count
+:Count rdf:type owl:Class ;
+       rdfs:subClassOf :ComplexIntent .
+
+
+###  http://www.semanticweb.org/anmolsaini/ontologies/2024/6/untitled-ontology-4#Describe
+:Describe rdf:type owl:Class ;
+          rdfs:subClassOf :ComplexIntent .
+
+
+###  http://www.semanticweb.org/anmolsaini/ontologies/2024/6/untitled-ontology-4#Dialog
+:Dialog rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/anmolsaini/ontologies/2024/6/untitled-ontology-4#DialogAction
+:DialogAction rdf:type owl:Class ;
+              rdfs:subClassOf :ConversationItem .
+
+
+###  http://www.semanticweb.org/anmolsaini/ontologies/2024/6/untitled-ontology-4#DialogStatus
+:DialogStatus rdf:type owl:Class ;
+              rdfs:subClassOf :Status .
+
+
+###  http://www.semanticweb.org/anmolsaini/ontologies/2024/6/untitled-ontology-4#DisplayResultsSummaryAction
+:DisplayResultsSummaryAction rdf:type owl:Class ;
+                             rdfs:subClassOf :Action ,
+                                             :Procedure .
+
+
+###  http://www.semanticweb.org/anmolsaini/ontologies/2024/6/untitled-ontology-4#Event
+:Event rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/anmolsaini/ontologies/2024/6/untitled-ontology-4#EventAnswer
+:EventAnswer rdf:type owl:Class ;
+             rdfs:subClassOf :Event .
+
+
+###  http://www.semanticweb.org/anmolsaini/ontologies/2024/6/untitled-ontology-4#EventQuestion
+:EventQuestion rdf:type owl:Class ;
+               rdfs:subClassOf :Event .
+
+
+###  http://www.semanticweb.org/anmolsaini/ontologies/2024/6/untitled-ontology-4#FeatureOfInterest
+:FeatureOfInterest rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/anmolsaini/ontologies/2024/6/untitled-ontology-4#Feedback
+:Feedback rdf:type owl:Class ;
+          rdfs:subClassOf :ConversationItem .
+
+
+###  http://www.semanticweb.org/anmolsaini/ontologies/2024/6/untitled-ontology-4#Formulation
+:Formulation rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/anmolsaini/ontologies/2024/6/untitled-ontology-4#HomingRoutineAction
+:HomingRoutineAction rdf:type owl:Class ;
+                     rdfs:subClassOf :Action ,
+                                     :Procedure .
+
+
+###  http://www.semanticweb.org/anmolsaini/ontologies/2024/6/untitled-ontology-4#Input
+:Input rdf:type owl:Class ;
+       rdfs:subClassOf :MaterialObject .
+
+
+###  http://www.semanticweb.org/anmolsaini/ontologies/2024/6/untitled-ontology-4#InstallBarrelClampAssemblyAction
+:InstallBarrelClampAssemblyAction rdf:type owl:Class ;
+                                  rdfs:subClassOf :Action ,
+                                                  :Procedure .
+
+
+###  http://www.semanticweb.org/anmolsaini/ontologies/2024/6/untitled-ontology-4#InstallDispensingTipAction
+:InstallDispensingTipAction rdf:type owl:Class ;
+                            rdfs:subClassOf :Action ,
+                                            :Procedure .
+
+
+###  http://www.semanticweb.org/anmolsaini/ontologies/2024/6/untitled-ontology-4#InstallSyringePlungerAction
+:InstallSyringePlungerAction rdf:type owl:Class ;
+                             rdfs:subClassOf :Action ,
+                                             :Procedure .
+
+
+###  http://www.semanticweb.org/anmolsaini/ontologies/2024/6/untitled-ontology-4#Instance
+:Instance rdf:type owl:Class ;
+          rdfs:subClassOf :Input ,
+                          <http://www.semanticweb.org/anmolsaini/ontologies/2024/6/untitled-ontology-4#Intent_(Info)> .
+
+
+###  http://www.semanticweb.org/anmolsaini/ontologies/2024/6/untitled-ontology-4#Interval
+:Interval rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/anmolsaini/ontologies/2024/6/untitled-ontology-4#Keyword
+:Keyword rdf:type owl:Class ;
+         rdfs:subClassOf :Query-BuildingParameter .
+
+
+###  http://www.semanticweb.org/anmolsaini/ontologies/2024/6/untitled-ontology-4#List
+:List rdf:type owl:Class ;
+      rdfs:subClassOf :ComplexIntent .
+
+
+###  http://www.semanticweb.org/anmolsaini/ontologies/2024/6/untitled-ontology-4#LoadSyringeAction
+:LoadSyringeAction rdf:type owl:Class ;
+                   rdfs:subClassOf :Action ,
+                                   :Procedure .
+
+
+###  http://www.semanticweb.org/anmolsaini/ontologies/2024/6/untitled-ontology-4#MaterialObject
+:MaterialObject rdf:type owl:Class ;
+                rdfs:subClassOf :Class .
+
+
+###  http://www.semanticweb.org/anmolsaini/ontologies/2024/6/untitled-ontology-4#MaterialTransformation
+:MaterialTransformation rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/anmolsaini/ontologies/2024/6/untitled-ontology-4#Neighborhood
+:Neighborhood rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/anmolsaini/ontologies/2024/6/untitled-ontology-4#ObservableProperty
+:ObservableProperty rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/anmolsaini/ontologies/2024/6/untitled-ontology-4#Observation
+:Observation rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/anmolsaini/ontologies/2024/6/untitled-ontology-4#Order
+:Order rdf:type owl:Class ;
+       rdfs:subClassOf :Query-BuildingParameter .
+
+
+###  http://www.semanticweb.org/anmolsaini/ontologies/2024/6/untitled-ontology-4#Output
+:Output rdf:type owl:Class ;
+        rdfs:subClassOf :MaterialObject .
+
+
+###  http://www.semanticweb.org/anmolsaini/ontologies/2024/6/untitled-ontology-4#Print
+:Print rdf:type owl:Class ;
+       rdfs:subClassOf :ComplexIntent .
+
+
+###  http://www.semanticweb.org/anmolsaini/ontologies/2024/6/untitled-ontology-4#Procedure
+:Procedure rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/anmolsaini/ontologies/2024/6/untitled-ontology-4#PurgeDispensingTipAction
+:PurgeDispensingTipAction rdf:type owl:Class ;
+                          rdfs:subClassOf :Action ,
+                                          :Procedure .
+
+
+###  http://www.semanticweb.org/anmolsaini/ontologies/2024/6/untitled-ontology-4#QueriedItemClass
+:QueriedItemClass rdf:type owl:Class ;
+                  rdfs:subClassOf :Query-BuildingParameter .
+
+
+###  http://www.semanticweb.org/anmolsaini/ontologies/2024/6/untitled-ontology-4#Query-BuildingParameter
+:Query-BuildingParameter rdf:type owl:Class ;
+                         rdfs:subClassOf <http://www.semanticweb.org/anmolsaini/ontologies/2024/6/untitled-ontology-4#Intent_(Info)> .
+
+
+###  http://www.semanticweb.org/anmolsaini/ontologies/2024/6/untitled-ontology-4#Question
+:Question rdf:type owl:Class ;
+          rdfs:subClassOf :ConversationItem .
+
+
+###  http://www.semanticweb.org/anmolsaini/ontologies/2024/6/untitled-ontology-4#Result
+:Result rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/anmolsaini/ontologies/2024/6/untitled-ontology-4#RunPrintCampaignAction
+:RunPrintCampaignAction rdf:type owl:Class ;
+                        rdfs:subClassOf :Action ,
+                                        :Procedure .
+
+
+###  http://www.semanticweb.org/anmolsaini/ontologies/2024/6/untitled-ontology-4#SelectParametersAction
+:SelectParametersAction rdf:type owl:Class ;
+                        rdfs:subClassOf :Action ,
+                                        :Procedure .
+
+
+###  http://www.semanticweb.org/anmolsaini/ontologies/2024/6/untitled-ontology-4#SelectToolpathAction
+:SelectToolpathAction rdf:type owl:Class ;
+                      rdfs:subClassOf :Action ,
+                                      :Procedure .
+
+
+###  http://www.semanticweb.org/anmolsaini/ontologies/2024/6/untitled-ontology-4#Sensor
+:Sensor rdf:type owl:Class ;
+        rdfs:subClassOf :Apparatus .
+
+
+###  http://www.semanticweb.org/anmolsaini/ontologies/2024/6/untitled-ontology-4#SimpleIntent
+:SimpleIntent rdf:type owl:Class ;
+              rdfs:subClassOf <http://www.semanticweb.org/anmolsaini/ontologies/2024/6/untitled-ontology-4#Intent_(Purpose)> .
+
+
+###  http://www.semanticweb.org/anmolsaini/ontologies/2024/6/untitled-ontology-4#Status
+:Status rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/anmolsaini/ontologies/2024/6/untitled-ontology-4#StatusItem
+:StatusItem rdf:type owl:Class ;
+            rdfs:subClassOf :Status .
+
+
+###  http://www.semanticweb.org/anmolsaini/ontologies/2024/6/untitled-ontology-4#TemporalExtent
+:TemporalExtent rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/anmolsaini/ontologies/2024/6/untitled-ontology-4#User
+:User rdf:type owl:Class ;
+      rdfs:subClassOf :Actor .
+
+
+###  http://www.semanticweb.org/anmolsaini/ontologies/2024/6/untitled-ontology-4#UserEvent
+:UserEvent rdf:type owl:Class ;
+           rdfs:subClassOf :Event .
+
+
+###  http://www.semanticweb.org/anmolsaini/ontologies/2024/6/untitled-ontology-4#UserStatus
+:UserStatus rdf:type owl:Class ;
+            rdfs:subClassOf :Status .
+
+
+###  http://www.semanticweb.org/anmolsaini/ontologies/2024/6/untitled-ontology-4#Intent_(Info)
+<http://www.semanticweb.org/anmolsaini/ontologies/2024/6/untitled-ontology-4#Intent_(Info)> rdf:type owl:Class ;
+                                                                                            rdfs:subClassOf :ConversationItem .
+
+
+###  http://www.semanticweb.org/anmolsaini/ontologies/2024/6/untitled-ontology-4#Intent_(Purpose)
+<http://www.semanticweb.org/anmolsaini/ontologies/2024/6/untitled-ontology-4#Intent_(Purpose)> rdf:type owl:Class .
+
+
+###  Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi
