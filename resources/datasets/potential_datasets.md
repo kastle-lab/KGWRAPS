@@ -20,6 +20,8 @@ Consists of NanoMine (polymer nanocomposites) and MetaMine (mechanical metamater
 
 Computed properties of known and hypothetical materials
 
+Requires account to view content
+
 ## [Protein Data Bank (PDB)](http://www.wwpdb.org)
 
 3D structures of proteins, nucleic acids, and complex assemblies
