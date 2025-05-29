@@ -1,0 +1,283 @@
+<PolymerNanocomposite>
+    <ID>L241_S6_Ma_2004</ID>
+    <DATA_SOURCE>
+        <Citation>
+            <CommonFields>
+                <CitationType>research article</CitationType>
+                <Publication>Journal of Materials Research</Publication>
+                <Title>Influence of nanoparticle surfaces on the electrical breakdown strength of nanoparticle-filled low-density polyethylene</Title>
+                <Author>Ma, Dongling</Author>
+                <Author>Siegel, Richard W.</Author>
+                <Author>Hong, Jung-Il</Author>
+                <Author>Schadler, Linda S.</Author>
+                <Publisher>Materials Research Society</Publisher>
+                <PublicationYear>2004</PublicationYear>
+                <DOI>10.1557/jmr.2004.19.3.857</DOI>
+                <Volume>19</Volume>
+                <URL>https://www.cambridge.org/core/journals/journal-of-materials-research/article/influence-of-nanoparticle-surfaces-on-the-electrical-breakdown-strength-of-nanoparticlefilled-lowdensity-polyethylene/7A9ED4A537073D7C0250C98097B43568</URL>
+                <Language>English</Language>
+                <DateOfCitation>07/17/2017</DateOfCitation>
+            </CommonFields>
+        </Citation>
+    </DATA_SOURCE>
+    <MATERIALS>
+        <Matrix>
+            <MatrixComponent>
+                <ChemicalName>low density polyethylene</ChemicalName>
+                <Abbreviation>LDPE</Abbreviation>
+                <ManufacturerName>DOW Chemical Company</ManufacturerName>
+                <TradeName>LDPE 681I</TradeName>
+                <Density>
+                    <value>0.922</value>
+                    <unit>g/cc</unit>
+                </Density>
+            </MatrixComponent>
+        </Matrix>
+        <Filler>
+            <FillerComponent>
+                <ChemicalName>titania</ChemicalName>
+                <Abbreviation>TiO2</Abbreviation>
+                <ManufacturerName>Alfa Aesar (Ward Hill, MA)</ManufacturerName>
+                <ParticleSize>
+                    <value>1.5</value>
+                    <unit>um</unit>
+                    <uncertainty>
+                        <type>absolute</type>
+                        <value>0.5</value>
+                    </uncertainty>
+                </ParticleSize>
+            </FillerComponent>
+            <FillerProcessing>
+                <ChooseParameter>
+                    <Drying-Evaporation>
+                        <Description>dried under vacuum</Description>
+                        <Temperature>
+                            <value>195</value>
+                            <unit>Celsius</unit>
+                        </Temperature>
+                        <Time>
+                            <value>24</value>
+                            <unit>hours</unit>
+                        </Time>
+                    </Drying-Evaporation>
+                </ChooseParameter>
+            </FillerProcessing>
+            <FillerComposition>
+                <mass>0.05</mass>
+            </FillerComposition>
+        </Filler>
+    </MATERIALS>
+    <PROCESSING>
+        <SolutionProcessing>
+            <ChooseParameter>
+                <Mixing>
+                    <Mixer>Haake System 90 Buchler mixer</Mixer>
+                    <MixingMethod>blending</MixingMethod>
+                    <ChemicalUsed>TiO2 particles</ChemicalUsed>
+                    <ChemicalUsed>LDPE</ChemicalUsed>
+                    <Time>
+                        <value>10</value>
+                        <unit>minutes</unit>
+                    </Time>
+                    <Temperature>
+                        <value>130</value>
+                        <unit>Celsius</unit>
+                    </Temperature>
+                </Mixing>
+            </ChooseParameter>
+            <ChooseParameter>
+                <Molding>hot-pressing</Molding>
+            </ChooseParameter>
+        </SolutionProcessing>
+    </PROCESSING>
+    <CHARACTERIZATION>
+        <Scanning_Electron_Microscopy>
+            <EquipmentUsed>JEOL JSM-6330F</EquipmentUsed>
+            <Description>Tokyo, Japan</Description>
+        </Scanning_Electron_Microscopy>
+        <Differential_Scanning_Calorimetry>
+            <Equipment>Mettler DSC 822e</Equipment>
+            <HeatingRate>
+                <value>10</value>
+                <unit>C/min</unit>
+            </HeatingRate>
+        </Differential_Scanning_Calorimetry>
+        <XRay_Diffraction_and_Scattering>
+            <Equipment>Scintag XDS 2000</Equipment>
+            <Description>Cupertino, CA</Description>
+        </XRay_Diffraction_and_Scattering>
+        <Atomic_Force_Microscopy>
+            <Equipment>Digital Instruments Nanoscope III microscope</Equipment>
+            <Description>with silicon cantilevers</Description>
+        </Atomic_Force_Microscopy>
+        <Thermogravimetric_Analysis>
+            <Equipment>Mettler TGA/SDTA</Equipment>
+            <Description>Toledo, Switzerland</Description>
+        </Thermogravimetric_Analysis>
+    </CHARACTERIZATION>
+    <PROPERTIES>
+        <Electrical>
+            <DielectricBreakdownStrength>
+                <Profile>
+                    <value>2.41</value>
+                    <unit>MV/cm</unit>
+                    <data>
+                        <description>linear regression of Weibull distribution of electrical breakdown strength</description>
+                        <data>
+                            <headers>
+                                <column id="0">Log E</column>
+                                <column id="1">Log(-ln(1-P))</column>
+                            </headers>
+                            <rows>
+                                <row id="0">
+                                    <column id="0">0.125713670228</column>
+                                    <column id="1">-1.82896012356</column>
+                                </row>
+                                <row id="1">
+                                    <column id="0">0.170681694954</column>
+                                    <column id="1">-1.34629139762</column>
+                                </row>
+                                <row id="2">
+                                    <column id="0">0.187677242331</column>
+                                    <column id="1">-1.11807392559</column>
+                                </row>
+                                <row id="3">
+                                    <column id="0">0.190195831439</column>
+                                    <column id="1">-0.968760440114</column>
+                                </row>
+                                <row id="4">
+                                    <column id="0">0.195702552363</column>
+                                    <column id="1">-0.845834086391</column>
+                                </row>
+                                <row id="5">
+                                    <column id="0">0.235620254597</column>
+                                    <column id="1">-0.740855144614</column>
+                                </row>
+                                <row id="6">
+                                    <column id="0">0.253585557363</column>
+                                    <column id="1">-0.679559009579</column>
+                                </row>
+                                <row id="7">
+                                    <column id="0">0.286519268229</column>
+                                    <column id="1">-0.583288149889</column>
+                                </row>
+                                <row id="8">
+                                    <column id="0">0.291514092671</column>
+                                    <column id="1">-0.539419132587</column>
+                                </row>
+                                <row id="9">
+                                    <column id="0">0.300498934766</column>
+                                    <column id="1">-0.495593929536</column>
+                                </row>
+                                <row id="10">
+                                    <column id="0">0.302504166918</column>
+                                    <column id="1">-0.434122537502</column>
+                                </row>
+                                <row id="11">
+                                    <column id="0">0.32246155756</column>
+                                    <column id="1">-0.390417823637</column>
+                                </row>
+                                <row id="12">
+                                    <column id="0">0.32546283365</column>
+                                    <column id="1">-0.337742142188</column>
+                                </row>
+                                <row id="13">
+                                    <column id="0">0.329461614153</column>
+                                    <column id="1">-0.285077414302</column>
+                                </row>
+                                <row id="14">
+                                    <column id="0">0.332458508819</column>
+                                    <column id="1">-0.258756003921</column>
+                                </row>
+                                <row id="15">
+                                    <column id="0">0.336451447422</column>
+                                    <column id="1">-0.241230304126</column>
+                                </row>
+                                <row id="16">
+                                    <column id="0">0.341446271864</column>
+                                    <column id="1">-0.197361286825</column>
+                                </row>
+                                <row id="17">
+                                    <column id="0">0.344444627004</column>
+                                    <column id="1">-0.162255119421</column>
+                                </row>
+                                <row id="18">
+                                    <column id="0">0.347441521669</column>
+                                    <column id="1">-0.135933709041</column>
+                                </row>
+                                <row id="19">
+                                    <column id="0">0.376372070607</column>
+                                    <column id="1">-0.118681848304</column>
+                                </row>
+                                <row id="20">
+                                    <column id="0">0.378374381808</column>
+                                    <column id="1">-0.0747799703158</column>
+                                </row>
+                                <row id="21">
+                                    <column id="0">0.381374197423</column>
+                                    <column id="1">-0.0308890458899</column>
+                                </row>
+                                <row id="22">
+                                    <column id="0">0.385368596502</column>
+                                    <column id="1">-0.00457858907163</column>
+                                </row>
+                                <row id="23">
+                                    <column id="0">0.395345101111</column>
+                                    <column id="1">0.00409663232725</column>
+                                </row>
+                                <row id="24">
+                                    <column id="0">0.403339741167</column>
+                                    <column id="1">0.0918565740543</column>
+                                </row>
+                                <row id="25">
+                                    <column id="0">0.408336026084</column>
+                                    <column id="1">0.144510348378</column>
+                                </row>
+                                <row id="26">
+                                    <column id="0">0.415318556978</column>
+                                    <column id="1">0.144433673441</column>
+                                </row>
+                                <row id="27">
+                                    <column id="0">0.424300478123</column>
+                                    <column id="1">0.170689362448</column>
+                                </row>
+                                <row id="28">
+                                    <column id="0">0.428296337676</column>
+                                    <column id="1">0.205784576289</column>
+                                </row>
+                                <row id="29">
+                                    <column id="0">0.477181356307</column>
+                                    <column id="1">0.249171636846</column>
+                                </row>
+                                <row id="30">
+                                    <column id="0">0.514097782451</column>
+                                    <column id="1">0.301474897173</column>
+                                </row>
+                                <row id="31">
+                                    <column id="0">0.51809510248</column>
+                                    <column id="1">0.345354868037</column>
+                                </row>
+                                <row id="32">
+                                    <column id="0">0.53007683924</column>
+                                    <column id="1">0.415501481469</column>
+                                </row>
+                                <row id="33">
+                                    <column id="0">0.540063567174</column>
+                                    <column id="1">0.485670002026</column>
+                                </row>
+                                <row id="34">
+                                    <column id="0">0.619878524993</column>
+                                    <column id="1">0.572641287263</column>
+                                </row>
+                            </rows>
+                        </data>
+                    </data>
+                </Profile>
+                <WeibullParameter>
+                    <value>4.51</value>
+                </WeibullParameter>
+            </DielectricBreakdownStrength>
+        </Electrical>
+    </PROPERTIES>
+</PolymerNanocomposite>
+    

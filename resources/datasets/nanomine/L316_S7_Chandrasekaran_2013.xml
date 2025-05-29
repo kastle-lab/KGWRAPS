@@ -1,0 +1,228 @@
+<PolymerNanocomposite>
+    <ID>L316_S7_Chandrasekaran_2013</ID>
+    <Control_ID>L316_S1_Chandrasekaran_2013</Control_ID>
+    <SchemaVersion>PNC_schema_041220</SchemaVersion>
+    <DatasetID>5e971bf5c9db0157d0737ee7</DatasetID>
+    <SchemaID>5e96dbe7c49dc53363c20305</SchemaID>
+    <DATA_SOURCE>
+        <Citation>
+            <CommonFields>
+                <CitationType>research article</CitationType>
+                <Publication>European Polymer Journal</Publication>
+                <Title>Preparation and characterization of graphite nano-platelet (GNP)/epoxy nano-composite: Mechanical, electrical and thermal properties</Title>
+                <Author>Chandrasekaran, Swetha</Author>
+                <Author>Seidel, Christian</Author>
+                <Author>Schulte, Karl</Author>
+                <Keyword>Graphite nano-platelet/epoxy nano-composite</Keyword>
+                <Keyword>Three-roll milling technique</Keyword>
+                <Keyword>Fracture toughness</Keyword>
+                <Keyword>Thermal conductivity</Keyword>
+                <Keyword>Electrical conductivity</Keyword>
+                <Keyword>Fractography</Keyword>
+                <Publisher>Elsevier</Publisher>
+                <PublicationYear>2013</PublicationYear>
+                <DOI>10.1016/j.eurpolymj.2013.10.008</DOI>
+                <Volume>49</Volume>
+                <URL>https://linkinghub.elsevier.com/retrieve/pii/S0014305713005004</URL>
+                <Language>English</Language>
+                <Location>Institut für Kunststoffe und Verbundwerkstoffe, Technische Universität Hamburg-Harburg, Denickestrasse, 15, D-21073 Hamburg, Germany</Location>
+                <DateOfCitation>2019-05-08</DateOfCitation>
+            </CommonFields>
+            <CitationType>
+                <Journal>
+                    <ISSN>00143057</ISSN>
+                    <Issue>12</Issue>
+                </Journal>
+            </CitationType>
+        </Citation>
+    </DATA_SOURCE>
+    <MATERIALS>
+        <Matrix>
+            <MatrixComponent>
+                <ChemicalName>bisphenol A based epoxy resin</ChemicalName>
+                <StdChemicalName>Bisphenol-A-epoxy vinyl ester resin</StdChemicalName>
+                <uSMILES>C(C(O)COC1=CC=C(C=C1)C(C)(C)C2=CC=C(O[*])C=C2)[*]</uSMILES>
+                <TradeName>Araldite LY556</TradeName>
+                <Density>
+                    <description>inserted from ChemProps, NanoMine</description>
+                    <value>1.12</value>
+                    <unit>g/cm3</unit>
+                </Density>
+                <Hardener>Aradur 917</Hardener>
+            </MatrixComponent>
+        </Matrix>
+        <Filler>
+            <FillerComponent>
+                <ChemicalName>graphene nanoplatelets</ChemicalName>
+                <StdChemicalName>Graphene</StdChemicalName>
+                <Abbreviation>GNPs</Abbreviation>
+                <ManufacturerOrSourceName>Punto Quantico S.r.1 (Italy)</ManufacturerOrSourceName>
+                <Density>
+                    <description>inserted from ChemProps, NanoMine</description>
+                    <value>2.267</value>
+                    <unit>g/cm3</unit>
+                </Density>
+                <SphericalParticleDiameter>
+                    <value>35</value>
+                    <unit>micrometers</unit>
+                    <uncertainty>
+                        <type>absolute</type>
+                        <value>15</value>
+                    </uncertainty>
+                </SphericalParticleDiameter>
+                <FillerComponentInComposite>
+                    <mass>0.001</mass>
+                    <volume>0.0004942950844560526</volume>
+                </FillerComponentInComposite>
+            </FillerComponent>
+            <FillerComposition>
+                <Fraction>
+                    <mass>
+                        <value>0.001</value>
+                        <source>reported</source>
+                    </mass>
+                    <volume>
+                        <value>0.0004942950844560526</value>
+                        <source>computed by NanoMine</source>
+                    </volume>
+                </Fraction>
+            </FillerComposition>
+        </Filler>
+    </MATERIALS>
+    <PROCESSING>
+        <SolutionProcessing>
+            <ChooseParameter>
+                <Mixing>
+                    <MixingMethod>ultra-sonication</MixingMethod>
+                    <ChemicalUsed>
+                        <description>GNP</description>
+                    </ChemicalUsed>
+                    <ChemicalUsed>
+                        <description>ethyl acetate</description>
+                    </ChemicalUsed>
+                    <Time>
+                        <value>30</value>
+                        <unit>minutes</unit>
+                    </Time>
+                </Mixing>
+            </ChooseParameter>
+            <ChooseParameter>
+                <Mixing>
+                    <MixingMethod>high shear mixing</MixingMethod>
+                    <ChemicalUsed>
+                        <description>GNP</description>
+                    </ChemicalUsed>
+                    <ChemicalUsed>
+                        <description>ethyl acetate</description>
+                    </ChemicalUsed>
+                    <ChemicalUsed>
+                        <description>epoxy</description>
+                    </ChemicalUsed>
+                    <RPM>
+                        <value>11000</value>
+                        <unit>rpm</unit>
+                    </RPM>
+                    <Time>
+                        <value>1.5</value>
+                        <unit>hours</unit>
+                    </Time>
+                    <Temperature>
+                        <value>70</value>
+                        <unit>Celsius</unit>
+                    </Temperature>
+                </Mixing>
+            </ChooseParameter>
+            <ChooseParameter>
+                <Heating>
+                    <Temperature>
+                        <value>70</value>
+                        <unit>Celsius</unit>
+                    </Temperature>
+                    <Time>
+                        <value>12</value>
+                        <unit>hours</unit>
+                    </Time>
+                </Heating>
+            </ChooseParameter>
+            <ChooseParameter>
+                <Mixing>
+                    <Description>manual mixing</Description>
+                    <ChemicalUsed>
+                        <description>GNP/epoxy nanocomposite suspension</description>
+                    </ChemicalUsed>
+                    <ChemicalUsed>
+                        <description>hardener</description>
+                    </ChemicalUsed>
+                    <ChemicalUsed>
+                        <description>accelerator</description>
+                    </ChemicalUsed>
+                    <Time>
+                        <value>10</value>
+                        <unit>minutes</unit>
+                    </Time>
+                </Mixing>
+            </ChooseParameter>
+            <ChooseParameter>
+                <Heating>
+                    <Description>degas</Description>
+                    <Temperature>
+                        <value>50</value>
+                        <unit>Celsius</unit>
+                    </Temperature>
+                </Heating>
+            </ChooseParameter>
+            <ChooseParameter>
+                <Heating>
+                    <Description>curing</Description>
+                    <Temperature>
+                        <value>80</value>
+                        <unit>Celsius</unit>
+                    </Temperature>
+                    <Time>
+                        <value>4</value>
+                        <unit>hours</unit>
+                    </Time>
+                </Heating>
+            </ChooseParameter>
+            <ChooseParameter>
+                <Heating>
+                    <Description>post-curing</Description>
+                    <Temperature>
+                        <value>140</value>
+                        <unit>Celsius</unit>
+                    </Temperature>
+                    <Time>
+                        <value>8</value>
+                        <unit>hours</unit>
+                    </Time>
+                </Heating>
+            </ChooseParameter>
+        </SolutionProcessing>
+    </PROCESSING>
+    <CHARACTERIZATION>
+        <Scanning_Electron_Microscopy>
+            <EquipmentUsed>LEO 1530 FE-SEM (Carl Zeiss, Germany)</EquipmentUsed>
+        </Scanning_Electron_Microscopy>
+        <Dynamic_Mechanical_Analysis>
+            <Equipment>Gabo Eplexor 500 N</Equipment>
+        </Dynamic_Mechanical_Analysis>
+        <XRay_Diffraction_and_Scattering>
+            <Equipment>Brucker AXS – D8 Advance X-ray diffractometer</Equipment>
+        </XRay_Diffraction_and_Scattering>
+    </CHARACTERIZATION>
+    <PROPERTIES>
+        <Electrical>
+            <ElectricConductivity>
+                <value>0.00000000238</value>
+                <unit>S/m</unit>
+            </ElectricConductivity>
+        </Electrical>
+    </PROPERTIES>
+    <MICROSTRUCTURE>
+        <ImageFile>
+            <File>http://localhost/nmr/blob?id=5b7c4556e74a1d68f48b60e4</File>
+            <Description>Transmission light microscopic images of GNP/epoxy suspension prepared by Soni_hsm process for 0.1 wt%.</Description>
+        </ImageFile>
+    </MICROSTRUCTURE>
+</PolymerNanocomposite>
+    

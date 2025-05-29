@@ -1,0 +1,166 @@
+<PolymerNanocomposite>
+    <ID>L114_S8_Hong_2006</ID>
+    <Control_ID>L114_S1_Hong_2006</Control_ID>
+    <SchemaVersion>PNC_schema_041220</SchemaVersion>
+    <DatasetID>5e970047c9db0157d0737e47</DatasetID>
+    <SchemaID>5e96dbe7c49dc53363c20305</SchemaID>
+    <DATA_SOURCE>
+        <Citation>
+            <CommonFields>
+                <CitationType>research article</CitationType>
+                <Publication>Journal of Materials Science</Publication>
+                <Title>Electrical behavior of low density polyethylene containing an inhomogeneous distribution of ZnO nanoparticles</Title>
+                <Author>Hong, J. I.</Author>
+                <Author>Schadler, L. S.</Author>
+                <Author>Siegel, R. W.</Author>
+                <Author>Mårtensson, E.</Author>
+                <Keyword>LDPE</Keyword>
+                <Keyword>Filler Particle</Keyword>
+                <Keyword>Filler Concentration</Keyword>
+                <Keyword>Filler Distribution</Keyword>
+                <Keyword>Filler Volume Fraction</Keyword>
+                <Publisher>Springer-Verlag</Publisher>
+                <PublicationYear>2006</PublicationYear>
+                <DOI>10.1007/s10853-006-0331-1</DOI>
+                <Volume>41</Volume>
+                <URL>http://link.springer.com/10.1007/s10853-006-0331-1</URL>
+                <Language>English</Language>
+                <Location>Materials Science and Engineering Department and Rensselaer Nanotechnology Center, Rensselaer Polytechnic Institute, Troy, USA</Location>
+                <DateOfCitation>2019-05-08</DateOfCitation>
+            </CommonFields>
+            <CitationType>
+                <Journal>
+                    <ISSN>1573-4803</ISSN>
+                    <Issue>18</Issue>
+                </Journal>
+            </CitationType>
+        </Citation>
+    </DATA_SOURCE>
+    <MATERIALS>
+        <Matrix>
+            <MatrixComponent>
+                <ChemicalName>low density polyethylene</ChemicalName>
+                <StdChemicalName>Poly(ethylene)</StdChemicalName>
+                <uSMILES>C(C[*])[*]</uSMILES>
+                <Abbreviation>LDPE</Abbreviation>
+                <PlasticType>thermoplastic</PlasticType>
+                <PolymerType>homopolymer</PolymerType>
+                <ManufacturerOrSourceName>Dow Chemical</ManufacturerOrSourceName>
+                <TradeName>DOW 681I</TradeName>
+                <Density>
+                    <value>0.93</value>
+                    <unit>g/cm^3</unit>
+                </Density>
+            </MatrixComponent>
+        </Matrix>
+        <Filler>
+            <FillerComponent>
+                <ChemicalName>zinc oxide</ChemicalName>
+                <StdChemicalName>Zinc oxide</StdChemicalName>
+                <PubChemRef>14806</PubChemRef>
+                <Abbreviation>ZnO</Abbreviation>
+                <ManufacturerOrSourceName>Nanophase Technologies Corporation</ManufacturerOrSourceName>
+                <Density>
+                    <description>inserted from ChemProps, NanoMine</description>
+                    <value>5.61</value>
+                    <unit>g/cm3</unit>
+                </Density>
+                <SphericalParticleDiameter>
+                    <description>average diameter</description>
+                    <value>49</value>
+                    <unit>nanometers</unit>
+                </SphericalParticleDiameter>
+                <FillerComponentInComposite>
+                    <mass>0.5982743019648398</mass>
+                    <volume>0.198</volume>
+                </FillerComponentInComposite>
+            </FillerComponent>
+            <FillerComposition>
+                <Fraction>
+                    <mass>
+                        <value>0.5982743019648398</value>
+                        <source>computed by NanoMine</source>
+                    </mass>
+                    <volume>
+                        <value>0.198</value>
+                        <source>reported</source>
+                    </volume>
+                </Fraction>
+            </FillerComposition>
+        </Filler>
+    </MATERIALS>
+    <PROCESSING>
+        <ExperimentalProcedure>Process for uniform distribution of filler particles</ExperimentalProcedure>
+        <MeltMixing>
+            <ChooseParameter>
+                <Mixing>
+                    <Description>ZnO/LDPE nanocomposites were produced by melt mixing commercial grade DOW 681I and ZnO nanoparticles in a Haake batch mixer. To avoid any thermal degradation of the polymer matrix, the mixing time was set to 10–13 min at 200°C.</Description>
+                    <Mixer>Haake batch mixer system 90</Mixer>
+                    <MixingMethod>mechanical mixing</MixingMethod>
+                    <ChemicalUsed>
+                        <description>zinc oxide</description>
+                    </ChemicalUsed>
+                    <ChemicalUsed>
+                        <description>LDPE</description>
+                    </ChemicalUsed>
+                    <Time>
+                        <value>11.5</value>
+                        <unit>minutes</unit>
+                        <uncertainty>
+                            <type>absolute</type>
+                            <value>1.5</value>
+                        </uncertainty>
+                    </Time>
+                    <Temperature>
+                        <value>200</value>
+                        <unit>Celsius</unit>
+                    </Temperature>
+                </Mixing>
+            </ChooseParameter>
+            <ChooseParameter>
+                <Molding>
+                    <MoldingMode>hot-pressing</MoldingMode>
+                    <MoldingInfo>
+                        <Description>The mixtures were then hot-pressed at approximately 170°C to form a disc-shaped specimen.</Description>
+                        <Temperature>
+                            <value>170</value>
+                            <unit>Celsius</unit>
+                        </Temperature>
+                    </MoldingInfo>
+                </Molding>
+            </ChooseParameter>
+        </MeltMixing>
+    </PROCESSING>
+    <CHARACTERIZATION>
+        <Scanning_Electron_Microscopy>
+            <EquipmentUsed>JEOL JSM-6335F</EquipmentUsed>
+            <Description>The resulting composites were then fractured in liquid      nitrogen and examined with a field-emission scanning electron microscope (FESEM, JEOL JSM-6335F).</Description>
+        </Scanning_Electron_Microscopy>
+        <Electrometry>
+            <Description>The electrical resistivity was measured under an applied electrical field of 10 kV/cm over the thickness of the disc specimens with a guard ring to remove any effect of surface conduction. The nonlinearity of the composite was also measured by changing the applied field strength up to approximately 60 kV/cm.</Description>
+        </Electrometry>
+    </CHARACTERIZATION>
+    <PROPERTIES>
+        <Electrical>
+            <VolumeResistivity>
+                <description>Resistivity under an applied field strength of 10 kV/cm.</description>
+                <value>5301014282661300000</value>
+                <unit>Ω·cm</unit>
+            </VolumeResistivity>
+        </Electrical>
+    </PROPERTIES>
+    <MICROSTRUCTURE>
+        <Experimental_Sample_Info>
+            <SampleSize>
+                <description>sample diameter</description>
+                <value>7.5</value>
+                <unit>centimeters</unit>
+            </SampleSize>
+            <SampleThickness>
+                <value>0.03</value>
+                <unit>centimeters</unit>
+            </SampleThickness>
+        </Experimental_Sample_Info>
+    </MICROSTRUCTURE>
+</PolymerNanocomposite>
+    

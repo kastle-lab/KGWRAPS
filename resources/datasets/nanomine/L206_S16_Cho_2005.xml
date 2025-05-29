@@ -1,0 +1,161 @@
+<PolymerNanocomposite>
+    <ID>L206_S16_Cho_2005</ID>
+    <Control_ID>L206_S1_Cho_2005</Control_ID>
+    <SchemaVersion>PNC_schema_041220</SchemaVersion>
+    <DatasetID>5e9708fac9db0157d0737e85</DatasetID>
+    <SchemaID>5e96dbe7c49dc53363c20305</SchemaID>
+    <DATA_SOURCE>
+        <Citation>
+            <CommonFields>
+                <CitationType>research article</CitationType>
+                <Publication>Journal of Materials Science: Materials in Electronics</Publication>
+                <Title>Comparison of theoretical predictions and experimental values of the dielectric constant of epoxy/BaTiO3 composite embedded capacitor films</Title>
+                <Author>Cho, Sung-Dong</Author>
+                <Author>Lee, Sang-Yong</Author>
+                <Author>Hyun, Jin-Gul</Author>
+                <Author>Paik, Kyung-Wook</Author>
+                <Keyword>Experimental Data</Keyword>
+                <Keyword>Dielectric Constant</Keyword>
+                <Keyword>Composite Material</Keyword>
+                <Keyword>Electronic Material</Keyword>
+                <Keyword>Theoretical Prediction</Keyword>
+                <Publisher>Kluwer Academic Publishers</Publisher>
+                <PublicationYear>2005</PublicationYear>
+                <DOI>10.1007/s10854-005-6454-3</DOI>
+                <Volume>16</Volume>
+                <URL>https://link.springer.com/article/10.1007/s10854-005-6454-3</URL>
+                <Language>English</Language>
+                <Location>Department of Materials Science and Engineering, Korea Advanced Institute of Science and Technology, Daejeon, Korea</Location>
+                <DateOfCitation>2017-08-11</DateOfCitation>
+            </CommonFields>
+            <CitationType>
+                <Journal>
+                    <ISSN>0957-4522</ISSN>
+                    <Issue>2</Issue>
+                </Journal>
+            </CitationType>
+        </Citation>
+    </DATA_SOURCE>
+    <MATERIALS>
+        <Matrix>
+            <MatrixComponent>
+                <ChemicalName>epoxy</ChemicalName>
+                <StdChemicalName>DGEBA Epoxy Resin</StdChemicalName>
+                <uSMILES>CC(C)(C1=CC=C(OCC2CO2)C=C1)C3=CC=C(OCC4CO4)C=C3</uSMILES>
+                <Abbreviation>epoxy</Abbreviation>
+                <Density>
+                    <description>inserted from ChemProps, NanoMine</description>
+                    <value>1.13</value>
+                    <unit>g/cm3</unit>
+                </Density>
+            </MatrixComponent>
+            <Description>the resin is composed of solid bisphenol-A type epoxies and a liquid bisphenol-F type epoxy</Description>
+        </Matrix>
+        <Filler>
+            <FillerComponent>
+                <ChemicalName>barium titanate</ChemicalName>
+                <StdChemicalName>Barium titanate</StdChemicalName>
+                <Abbreviation>BaTiO3</Abbreviation>
+                <Density>
+                    <description>inserted from ChemProps, NanoMine</description>
+                    <value>6.02</value>
+                    <unit>g/cm3</unit>
+                </Density>
+                <SurfaceArea>
+                    <specific>
+                        <value>4.0</value>
+                        <unit>m^2g</unit>
+                        <uncertainty>
+                            <type>absolute</type>
+                            <value>0.4</value>
+                        </uncertainty>
+                    </specific>
+                </SurfaceArea>
+                <FillerComponentInComposite>
+                    <mass>0.6954177897574124</mass>
+                    <volume>0.3</volume>
+                </FillerComponentInComposite>
+            </FillerComponent>
+            <FillerComposition>
+                <Fraction>
+                    <mass>
+                        <value>0.6954177897574124</value>
+                        <source>computed by NanoMine</source>
+                    </mass>
+                    <volume>
+                        <value>0.3</value>
+                        <source>reported</source>
+                    </volume>
+                </Fraction>
+            </FillerComposition>
+        </Filler>
+    </MATERIALS>
+    <PROCESSING>
+        <SolutionProcessing>
+            <ChooseParameter>
+                <Mixing>
+                    <Description>ultrasonic power was applied to the suspension to break down BaTiO3 powder agglomerates</Description>
+                    <MixingMethod>ball milling</MixingMethod>
+                    <ChemicalUsed>
+                        <description>BaTiO3</description>
+                    </ChemicalUsed>
+                    <ChemicalUsed>
+                        <description>phosphate ester</description>
+                    </ChemicalUsed>
+                    <ChemicalUsed>
+                        <description>methylethyl-ketone</description>
+                    </ChemicalUsed>
+                    <ChemicalUsed>
+                        <description>toluene</description>
+                    </ChemicalUsed>
+                    <Time>
+                        <value>2</value>
+                        <unit>days</unit>
+                    </Time>
+                </Mixing>
+            </ChooseParameter>
+            <ChooseParameter>
+                <Additive>
+                    <Additive>epoxy</Additive>
+                </Additive>
+            </ChooseParameter>
+            <ChooseParameter>
+                <Additive>
+                    <Description>curing agent</Description>
+                    <Additive>dicyandiamide</Additive>
+                </Additive>
+            </ChooseParameter>
+            <ChooseParameter>
+                <Mixing>
+                    <MixingMethod>ball milling</MixingMethod>
+                </Mixing>
+            </ChooseParameter>
+            <ChooseParameter>
+                <Drying-Evaporation>
+                    <Description>dried in a vacuum oven to remove solvent residues</Description>
+                    <Temperature>
+                        <value>100</value>
+                        <unit>Celsius</unit>
+                    </Temperature>
+                    <Time>
+                        <value>30</value>
+                        <unit>minutes</unit>
+                    </Time>
+                </Drying-Evaporation>
+            </ChooseParameter>
+        </SolutionProcessing>
+    </PROCESSING>
+    <CHARACTERIZATION>
+        <Dielectric_and_Impedance_Spectroscopy_Analysis>
+            <Equipment>HP 4284A LCR meter</Equipment>
+        </Dielectric_and_Impedance_Spectroscopy_Analysis>
+    </CHARACTERIZATION>
+    <PROPERTIES>
+        <Electrical>
+            <DC_DielectricConstant>
+                <value>14.817</value>
+            </DC_DielectricConstant>
+        </Electrical>
+    </PROPERTIES>
+</PolymerNanocomposite>
+    

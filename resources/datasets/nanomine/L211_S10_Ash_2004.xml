@@ -1,0 +1,189 @@
+<PolymerNanocomposite>
+    <ID>L211_S10_Ash_2004</ID>
+    <Control_ID>L211_S1_Ash_2004</Control_ID>
+    <SchemaVersion>PNC_schema_041220</SchemaVersion>
+    <DatasetID>5e970abcc9db0157d0737e8a</DatasetID>
+    <SchemaID>5e96dbe7c49dc53363c20305</SchemaID>
+    <DATA_SOURCE>
+        <Citation>
+            <CommonFields>
+                <CitationType>research article</CitationType>
+                <Publication>Journal of Polymer Science Part B: Polymer Physics</Publication>
+                <Title>Glass-transition temperature behavior of alumina/PMMA nanocomposites</Title>
+                <Author>Ash, Benjamin J.</Author>
+                <Author>Siegel, Richard W.</Author>
+                <Author>Schadler, Linda S.</Author>
+                <Keyword>glass transition</Keyword>
+                <Keyword>nanocomposites</Keyword>
+                <Keyword>interfaces</Keyword>
+                <Keyword>differential scanning calorimetry (DSC)</Keyword>
+                <Publisher>Wiley Subscription Services, Inc., A Wiley Company</Publisher>
+                <PublicationYear>2004</PublicationYear>
+                <DOI>10.1002/polb.20297</DOI>
+                <Volume>42</Volume>
+                <URL>http://onlinelibrary.wiley.com/doi/10.1002/polb.20297/abstract</URL>
+                <Language>English</Language>
+                <Location>Sandia National Laboratories, Albuquerque, New Mexico 87185, USA</Location>
+                <DateOfCitation>2017-07-13</DateOfCitation>
+            </CommonFields>
+            <CitationType>
+                <Journal>
+                    <ISSN>1099-0488</ISSN>
+                    <Issue>23</Issue>
+                </Journal>
+            </CitationType>
+        </Citation>
+    </DATA_SOURCE>
+    <MATERIALS>
+        <Matrix>
+            <MatrixComponent>
+                <ChemicalName>poly methyl methacrylate</ChemicalName>
+                <StdChemicalName>Poly(methyl methacrylate)</StdChemicalName>
+                <uSMILES>C(C(C)(C(=O)OC)[*])[*]</uSMILES>
+                <PubChemRef>6658</PubChemRef>
+                <Abbreviation>PMMA</Abbreviation>
+                <ConstitutionalUnit>C5H8O2</ConstitutionalUnit>
+                <PlasticType>thermoplastic</PlasticType>
+                <PolymerType>homopolymer</PolymerType>
+                <ManufacturerOrSourceName>Acros</ManufacturerOrSourceName>
+                <MolecularWeight>
+                    <value>153000</value>
+                    <unit>g/mol</unit>
+                </MolecularWeight>
+                <Polydispersity>1.6</Polydispersity>
+                <Tacticity>isotactic</Tacticity>
+                <Density>
+                    <description>inserted from ChemProps, NanoMine</description>
+                    <value>1.15</value>
+                    <unit>g/cm3</unit>
+                </Density>
+            </MatrixComponent>
+        </Matrix>
+        <Filler>
+            <FillerComponent>
+                <ChemicalName>Alumina</ChemicalName>
+                <StdChemicalName>Aluminium oxide</StdChemicalName>
+                <PubChemRef>14769</PubChemRef>
+                <Abbreviation>Al2O3</Abbreviation>
+                <ManufacturerOrSourceName>Nanophase Technologies</ManufacturerOrSourceName>
+                <Density>
+                    <description>inserted from ChemProps, NanoMine</description>
+                    <value>3.95</value>
+                    <unit>g/cm3</unit>
+                </Density>
+                <SphericalParticleDiameter>
+                    <value>17</value>
+                    <unit>nm</unit>
+                </SphericalParticleDiameter>
+                <SurfaceArea>
+                    <specific>
+                        <value>98</value>
+                        <unit>m^2/g</unit>
+                    </specific>
+                </SurfaceArea>
+                <ParticleAspectRatio>
+                    <value>1</value>
+                </ParticleAspectRatio>
+                <FillerComponentInComposite>
+                    <mass>0.02</mass>
+                    <volume>0.005906522855675398</volume>
+                </FillerComponentInComposite>
+            </FillerComponent>
+            <FillerComposition>
+                <Constituent>Al2O3 wt %</Constituent>
+                <Fraction>
+                    <mass>
+                        <value>0.02</value>
+                        <source>reported</source>
+                    </mass>
+                    <volume>
+                        <value>0.005906522855675398</value>
+                        <source>computed by NanoMine</source>
+                    </volume>
+                </Fraction>
+            </FillerComposition>
+        </Filler>
+    </MATERIALS>
+    <PROCESSING>
+        <ExperimentalProcedure>In-situ polymerization with nanoparticles</ExperimentalProcedure>
+        <In-SituPolymerization>
+            <ChooseParameter>
+                <Additive>
+                    <Description>Initiator</Description>
+                    <Additive>AIBN</Additive>
+                    <Amount>
+                        <value>0.0425</value>
+                        <unit>g</unit>
+                    </Amount>
+                </Additive>
+            </ChooseParameter>
+            <ChooseParameter>
+                <Additive>
+                    <Description>Chain transfer agent</Description>
+                    <Additive>1- decanethiol</Additive>
+                    <Amount>
+                        <value>30</value>
+                        <unit>uL</unit>
+                    </Amount>
+                </Additive>
+            </ChooseParameter>
+            <ChooseParameter>
+                <Mixing>
+                    <Description>Sonication under water bath</Description>
+                    <MixingMethod>ultra-sonication</MixingMethod>
+                    <Time>
+                        <value>21</value>
+                        <unit>hours</unit>
+                    </Time>
+                    <Temperature>
+                        <value>50</value>
+                        <unit>Celsius</unit>
+                    </Temperature>
+                </Mixing>
+            </ChooseParameter>
+            <ChooseParameter>
+                <Heating>
+                    <Temperature>
+                        <value>115</value>
+                        <unit>Celsius</unit>
+                    </Temperature>
+                    <Time>
+                        <value>2</value>
+                        <unit>hours</unit>
+                    </Time>
+                </Heating>
+            </ChooseParameter>
+        </In-SituPolymerization>
+    </PROCESSING>
+    <CHARACTERIZATION>
+        <Transmission_Electron_Microscopy>
+            <EquipmentUsed>JEOL CM-12</EquipmentUsed>
+        </Transmission_Electron_Microscopy>
+        <Scanning_Electron_Microscopy>
+            <EquipmentUsed>JEOL JSM-6330F</EquipmentUsed>
+            <AcceleratingVoltage>
+                <value>5</value>
+                <unit>kV</unit>
+            </AcceleratingVoltage>
+        </Scanning_Electron_Microscopy>
+        <Dynamic_Mechanical_Analysis>
+            <Equipment>Rheometric Scientific DMTA V</Equipment>
+        </Dynamic_Mechanical_Analysis>
+        <Differential_Scanning_Calorimetry>
+            <Equipment>Mettler Toledo DSC 822e</Equipment>
+            <HeatingRate>
+                <value>10</value>
+                <unit>C/min</unit>
+            </HeatingRate>
+        </Differential_Scanning_Calorimetry>
+    </CHARACTERIZATION>
+    <PROPERTIES>
+        <Thermal>
+            <GlassTransitionTemperature>
+                <value>98.52</value>
+                <unit>Celsius</unit>
+            </GlassTransitionTemperature>
+        </Thermal>
+    </PROPERTIES>
+</PolymerNanocomposite>
+    

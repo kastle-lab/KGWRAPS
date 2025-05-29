@@ -1,0 +1,290 @@
+<PolymerNanocomposite>
+    <ID>L121_S1_Nelson_2005</ID>
+    <Control_ID>L121_S1_Nelson_2005</Control_ID>
+    <SchemaVersion>PNC_schema_041220</SchemaVersion>
+    <DatasetID>5e970116c9db0157d0737e4c</DatasetID>
+    <SchemaID>5e96dbe7c49dc53363c20305</SchemaID>
+    <DATA_SOURCE>
+        <Citation>
+            <CommonFields>
+                <CitationType>research article</CitationType>
+                <Publication>Journal of Physics D: Applied Physics</Publication>
+                <Title>Nanocomposite dielectrics—properties and implications</Title>
+                <Author>Nelson, J K</Author>
+                <Author>Hu, Y</Author>
+                <Publisher>IOP Publishing</Publisher>
+                <PublicationYear>2005</PublicationYear>
+                <DOI>10.1088/0022-3727/38/2/005</DOI>
+                <Volume>38</Volume>
+                <URL>http://iopscience.iop.org/article/10.1088/0022-3727/38/2/005/meta</URL>
+                <Language>English</Language>
+                <Location>Department of Electrical, Computer &amp; Systems Engineering, Rensselaer Polytechnic Institute, Troy, NY 12180, USA</Location>
+                <DateOfCitation>2017-06-28</DateOfCitation>
+            </CommonFields>
+            <CitationType>
+                <Journal>
+                    <ISSN>0022-3727</ISSN>
+                    <Issue>2</Issue>
+                </Journal>
+            </CitationType>
+        </Citation>
+    </DATA_SOURCE>
+    <MATERIALS>
+        <Matrix>
+            <MatrixComponent>
+                <ChemicalName>Diglycidyl Ether-Bisphenol A resin</ChemicalName>
+                <StdChemicalName>DGEBA Epoxy Resin</StdChemicalName>
+                <uSMILES>CC(C)(C1=CC=C(OCC2CO2)C=C1)C3=CC=C(OCC4CO4)C=C3</uSMILES>
+                <Abbreviation>DGEBA</Abbreviation>
+                <ManufacturerOrSourceName>Vantico</ManufacturerOrSourceName>
+                <TradeName>Vantico CT1300</TradeName>
+                <Density>
+                    <description>inserted from ChemProps, NanoMine</description>
+                    <value>1.13</value>
+                    <unit>g/cm3</unit>
+                </Density>
+                <Additive>
+                    <description>amine-based cross-linking agent (Vantico NY956EN)</description>
+                </Additive>
+            </MatrixComponent>
+        </Matrix>
+    </MATERIALS>
+    <PROCESSING>
+        <SolutionProcessing>
+            <ChooseParameter>
+                <Mixing>
+                    <ChemicalUsed>
+                        <description>epoxy</description>
+                    </ChemicalUsed>
+                    <ChemicalUsed>
+                        <description>amine-based cross-linking agent (Vantico NY956EN)</description>
+                    </ChemicalUsed>
+                </Mixing>
+            </ChooseParameter>
+            <ChooseParameter>
+                <Drying-Evaporation>
+                    <Description>Resin and hardener degassing</Description>
+                    <Temperature>
+                        <value>35.0</value>
+                        <unit>Celsius</unit>
+                    </Temperature>
+                    <Time>
+                        <value>2.0</value>
+                        <unit>hours</unit>
+                    </Time>
+                    <AmbientCondition>vacuum</AmbientCondition>
+                </Drying-Evaporation>
+            </ChooseParameter>
+            <ChooseParameter>
+                <Additive>
+                    <Description>Adding hardener to resin</Description>
+                    <Additive>KBr</Additive>
+                </Additive>
+            </ChooseParameter>
+            <ChooseParameter>
+                <Molding>
+                    <MoldingMode>casting</MoldingMode>
+                    <MoldingInfo>
+                        <Description>in polished stainless steel molds</Description>
+                    </MoldingInfo>
+                </Molding>
+            </ChooseParameter>
+            <ChooseParameter>
+                <Additive>
+                    <Description>triethylene tetra amine (TETA) curing agent</Description>
+                    <Additive>triethylene tetra amine</Additive>
+                </Additive>
+            </ChooseParameter>
+            <ChooseParameter>
+                <Drying-Evaporation>
+                    <Description>curing with triethylene tetra amine (TETA) curing agent</Description>
+                    <Temperature>
+                        <value>25.0</value>
+                        <unit>Celsius</unit>
+                    </Temperature>
+                    <Time>
+                        <value>48.0</value>
+                        <unit>hours</unit>
+                    </Time>
+                </Drying-Evaporation>
+            </ChooseParameter>
+            <ChooseParameter>
+                <Heating>
+                    <Description>post-curing</Description>
+                    <Temperature>
+                        <value>60.0</value>
+                        <unit>Celsius</unit>
+                    </Temperature>
+                    <Time>
+                        <value>3.0</value>
+                        <unit>hours</unit>
+                    </Time>
+                </Heating>
+            </ChooseParameter>
+        </SolutionProcessing>
+    </PROCESSING>
+    <CHARACTERIZATION>
+        <Dielectric_and_Impedance_Spectroscopy_Analysis>
+            <Equipment>Novocontrol Alpha Analyser type K</Equipment>
+            <Description>Novocontrol active BDS-1200 sample cell</Description>
+        </Dielectric_and_Impedance_Spectroscopy_Analysis>
+        <Fourier_Transform_Infrared_Spectroscopy>
+            <Equipment>Magna-IR 560 spectrometer</Equipment>
+            <Description>In transmission mode</Description>
+        </Fourier_Transform_Infrared_Spectroscopy>
+    </CHARACTERIZATION>
+    <PROPERTIES>
+        <Electrical>
+            <AC_DielectricDispersion>
+                <DielectricDispersionDependence>
+                    <FrequencyDependence>
+                        <condition>
+                            <temperature>
+                                <value>115</value>
+                                <unit>Celsius</unit>
+                            </temperature>
+                        </condition>
+                    </FrequencyDependence>
+                </DielectricDispersionDependence>
+                <Dielectric_Real_Permittivity>
+                    <data>
+                        <description>real part of relative permittivity at 115C</description>
+                        <AxisLabel>
+                            <xName>Frequency</xName>
+                            <xUnit>Hz</xUnit>
+                            <yName>Real Relative Permittivity</yName>
+                            <yUnit>dimensionless</yUnit>
+                        </AxisLabel>
+                        <data>
+                            <headers>
+                                <column>Frequency (Hz)</column>
+                                <column>Real Relative Permittivity</column>
+                            </headers>
+                            <rows>
+                                <row>
+                                    <column>9.97392294312e-05</column>
+                                    <column>1385390.51108</column>
+                                </row>
+                                <row>
+                                    <column>0.000138098730365</column>
+                                    <column>912864.81918</column>
+                                </row>
+                                <row>
+                                    <column>0.000339960184276</column>
+                                    <column>283600.948807</column>
+                                </row>
+                                <row>
+                                    <column>0.000850555863262</column>
+                                    <column>83517.4142765</column>
+                                </row>
+                                <row>
+                                    <column>0.00212808499408</column>
+                                    <column>22796.7907725</column>
+                                </row>
+                                <row>
+                                    <column>0.00530433333853</column>
+                                    <column>8054.56672014</column>
+                                </row>
+                                <row>
+                                    <column>0.013136087085</column>
+                                    <column>2996.77614409</column>
+                                </row>
+                                <row>
+                                    <column>0.033647908015</column>
+                                    <column>1088.77431316</column>
+                                </row>
+                                <row>
+                                    <column>0.0839026496108</column>
+                                    <column>452.609102881</column>
+                                </row>
+                                <row>
+                                    <column>0.208537760047</column>
+                                    <column>251.175223987</column>
+                                </row>
+                                <row>
+                                    <column>0.510050533127</column>
+                                    <column>163.818343834</column>
+                                </row>
+                                <row>
+                                    <column>1.27689292476</column>
+                                    <column>124.832641668</column>
+                                </row>
+                                <row>
+                                    <column>3.22826728716</column>
+                                    <column>82.3286502433</column>
+                                </row>
+                                <row>
+                                    <column>8.05469923982</column>
+                                    <column>42.5864616888</column>
+                                </row>
+                                <row>
+                                    <column>20.0384144159</column>
+                                    <column>22.5459649638</column>
+                                </row>
+                                <row>
+                                    <column>50.5335495336</column>
+                                    <column>15.7542238033</column>
+                                </row>
+                                <row>
+                                    <column>125.907483861</column>
+                                    <column>12.6362305346</column>
+                                </row>
+                                <row>
+                                    <column>321.174722767</column>
+                                    <column>10.6648564364</column>
+                                </row>
+                                <row>
+                                    <column>782.972114923</column>
+                                    <column>9.357875675</column>
+                                </row>
+                                <row>
+                                    <column>1987.39205539</column>
+                                    <column>8.52921086523</column>
+                                </row>
+                                <row>
+                                    <column>4886.66349159</column>
+                                    <column>8.2487053247</column>
+                                </row>
+                                <row>
+                                    <column>12377.3684604</column>
+                                    <column>7.86249932067</column>
+                                </row>
+                                <row>
+                                    <column>30922.7850127</column>
+                                    <column>7.3212140538</column>
+                                </row>
+                                <row>
+                                    <column>76825.067579</column>
+                                    <column>6.99922107793</column>
+                                </row>
+                                <row>
+                                    <column>194373.426561</column>
+                                    <column>6.60871769313</column>
+                                </row>
+                                <row>
+                                    <column>475964.624946</column>
+                                    <column>6.69079786585</column>
+                                </row>
+                                <row>
+                                    <column>1214569.68612</column>
+                                    <column>6.09515180994</column>
+                                </row>
+                                <row>
+                                    <column>2975296.97962</column>
+                                    <column>5.79046133989</column>
+                                </row>
+                            </rows>
+                        </data>
+                    </data>
+                </Dielectric_Real_Permittivity>
+            </AC_DielectricDispersion>
+        </Electrical>
+        <Thermal>
+            <GlassTransitionTemperature>
+                <value>63.8</value>
+                <unit>Celsius</unit>
+            </GlassTransitionTemperature>
+        </Thermal>
+    </PROPERTIES>
+</PolymerNanocomposite>
+    

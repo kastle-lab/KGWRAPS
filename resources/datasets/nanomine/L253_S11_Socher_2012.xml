@@ -1,0 +1,308 @@
+<PolymerNanocomposite>
+    <ID>L253_S11_Socher_2012</ID>
+    <DATA_SOURCE>
+        <Citation>
+            <CommonFields>
+                <CitationType>research article</CitationType>
+                <Publication>Polymer</Publication>
+                <Title>The influence of matrix viscosity on MWCNT dispersion and electrical properties in different thermoplastic nanocomposites</Title>
+                <Author>Socher, Robert</Author>
+                <Author>Krause, Beate</Author>
+                <Author>M&#252;ller, Michael T.</Author>
+                <Author>Boldt, Regine</Author>
+                <Author>P&#246;tschke, Petra</Author>
+                <Keyword>Carbon nanotubes</Keyword>
+                <Keyword>Thermoplastic composites</Keyword>
+                <Keyword>Matrix viscosity</Keyword>
+                <Publisher>Elsevier</Publisher>
+                <PublicationYear>2012</PublicationYear>
+                <DOI>10.1016/j.polymer.2011.12.019</DOI>
+                <Volume>53</Volume>
+                <URL>https://www.sciencedirect.com/science/article/pii/S0032386111010251?via%3Dihub</URL>
+                <Language>English</Language>
+                <Location>Leibniz Institute of Polymer Research Dresden (IPF), Hohe Str. 6, 01069 Dresden, Germany</Location>
+                <DateOfCitation>2017-07-26</DateOfCitation>
+            </CommonFields>
+            <CitationType>
+                <Journal>
+                    <ISSN>0032-3861</ISSN>
+                    <Issue>2</Issue>
+                </Journal>
+            </CitationType>
+        </Citation>
+    </DATA_SOURCE>
+    <MATERIALS>
+        <Matrix>
+            <MatrixComponent>
+                <ChemicalName>poly(ether ether ketone)</ChemicalName>
+                <Abbreviation>PEEK</Abbreviation>
+                <ManufacturerOrSourceName>Evonik Industries</ManufacturerOrSourceName>
+                <TradeName>VESTAKEEP 2000P</TradeName>
+            </MatrixComponent>
+            <Description>viscosity level: medium</Description>
+        </Matrix>
+        <Filler>
+            <FillerComponent>
+                <ChemicalName>multi-walled carbon nanotubes</ChemicalName>
+                <Abbreviation>MWCNT</Abbreviation>
+                <ManufacturerOrSourceName>Bayer MaterialScience AG, Leverkusen, Germany</ManufacturerOrSourceName>
+                <TradeName>Baytubes C150P</TradeName>
+                <Density>
+                    <description>+/- 25 kg/m^3</description>
+                    <value>145</value>
+                    <unit>kg/m^3</unit>
+                </Density>
+                <NonSphericalShape>
+                    <Width>
+                        <description>mean diameter of 10.5 nm</description>
+                        <value>10.5</value>
+                        <unit>nm</unit>
+                    </Width>
+                    <Depth>
+                        <description>mean diameter of 10.5 nm</description>
+                        <value>10.5</value>
+                        <unit>nm</unit>
+                    </Depth>
+                </NonSphericalShape>
+            </FillerComponent>
+        </Filler>
+    </MATERIALS>
+    <PROCESSING>
+        <MeltMixing>
+            <ChooseParameter>
+                <Extrusion>
+                    <TwinScrewExtrusion>
+                        <Extruder>conical co-rotating twin-screw microcompounder (DACA Instruments, Santa Barbara, USA)</Extruder>
+                        <RotationMode>CoRotation</RotationMode>
+                    </TwinScrewExtrusion>
+                </Extrusion>
+            </ChooseParameter>
+            <ChooseParameter>
+                <Mixing>
+                    <MixingMethod>blending</MixingMethod>
+                    <ChemicalUsed>
+                        <description>PEEK</description>
+                    </ChemicalUsed>
+                    <ChemicalUsed>
+                        <description>MWCNT</description>
+                    </ChemicalUsed>
+                    <Time>
+                        <value>5</value>
+                        <unit>minutes</unit>
+                    </Time>
+                    <Temperature>
+                        <value>360</value>
+                        <unit>Celsius</unit>
+                    </Temperature>
+                </Mixing>
+            </ChooseParameter>
+            <ChooseParameter>
+                <Heating>
+                    <Description>preheating</Description>
+                    <Time>
+                        <value>2.5</value>
+                        <unit>minutes</unit>
+                    </Time>
+                </Heating>
+            </ChooseParameter>
+            <ChooseParameter>
+                <Mixing>
+                    <RPM>
+                        <value>250</value>
+                    </RPM>
+                    <Temperature>
+                        <value>360</value>
+                        <unit>Celsius</unit>
+                    </Temperature>
+                </Mixing>
+            </ChooseParameter>
+            <ChooseParameter>
+                <Heating>
+                    <Temperature>
+                        <value>360</value>
+                        <unit>Celsius</unit>
+                    </Temperature>
+                    <Time>
+                        <value>1</value>
+                        <unit>minutes</unit>
+                    </Time>
+                </Heating>
+            </ChooseParameter>
+            <ChooseParameter>
+                <Molding>
+                    <MoldingMode>hot-pressing</MoldingMode>
+                </Molding>
+            </ChooseParameter>
+        </MeltMixing>
+    </PROCESSING>
+    <CHARACTERIZATION>
+        <Transmission_Electron_Microscopy>
+            <EquipmentUsed>LIBRA120</EquipmentUsed>
+            <Description>Carl Zeiss GmbH, Jena, Germany</Description>
+            <AcceleratingVoltage>
+                <value>120</value>
+                <unit>kV</unit>
+            </AcceleratingVoltage>
+        </Transmission_Electron_Microscopy>
+        <Rheometery>
+            <RheometerType>plate</RheometerType>
+            <Description>Rheometric Scientific Inc., Piscataway, USA</Description>
+            <Equipment>ARES oscillatory rheometer</Equipment>
+        </Rheometery>
+        <Electrometry>
+            <Equipment>Keithley electrometer 6517A</Equipment>
+        </Electrometry>
+        <Electrometry>
+            <Equipment>Keithley 8009 Resistivity Test Fixture</Equipment>
+        </Electrometry>
+    </CHARACTERIZATION>
+    <PROPERTIES>
+        <Electrical>
+            <VolumeResistivity>
+                <data>
+                    <description>electrical volume resistivity in dependence on MWCNT content</description>
+                    <data>
+                        <headers>
+                            <column id="0">MWCNT content ( wt %)</column>
+                            <column id="1">electrical volume resistivity (ohm cm)</column>
+                        </headers>
+                        <rows>
+                            <row id="0">
+                                <column id="0">0.00418760469012</column>
+                                <column id="1">1.42097068954e+15</column>
+                            </row>
+                            <row id="1">
+                                <column id="0">0.36432160804</column>
+                                <column id="1">7.41503991322e+14</column>
+                            </row>
+                            <row id="2">
+                                <column id="0">0.498324958124</column>
+                                <column id="1">2.01915770054e+14</column>
+                            </row>
+                            <row id="3">
+                                <column id="0">0.741206030151</column>
+                                <column id="1">4.55260292426e+14</column>
+                            </row>
+                            <row id="4">
+                                <column id="0">0.992462311558</column>
+                                <column id="1">3.02311015587e+11</column>
+                            </row>
+                            <row id="5">
+                                <column id="0">1.47822445561</column>
+                                <column id="1">170125.427985</column>
+                            </row>
+                            <row id="6">
+                                <column id="0">2.00586264657</column>
+                                <column id="1">96295.625246</column>
+                            </row>
+                            <row id="7">
+                                <column id="0">3.00251256281</column>
+                                <column id="1">54.3479102999</column>
+                            </row>
+                            <row id="8">
+                                <column id="0">4.99581239531</column>
+                                <column id="1">33.36791956</column>
+                            </row>
+                        </rows>
+                    </data>
+                </data>
+            </VolumeResistivity>
+        </Electrical>
+        <Rheological>
+            <RheologicalViscosity>
+                <MeltViscosity>
+                    <data>
+                        <description>complex melt viscosity in dependence on frequency</description>
+                        <data>
+                            <headers>
+                                <column id="0">freq (rad/s)</column>
+                                <column id="1">complex melt viscosity(Pa s)</column>
+                            </headers>
+                            <rows>
+                                <row id="0">
+                                    <column id="0">0.0617001000304</column>
+                                    <column id="1">569.955494946</column>
+                                </row>
+                                <row id="1">
+                                    <column id="0">0.0973611613229</column>
+                                    <column id="1">566.661441321</column>
+                                </row>
+                                <row id="2">
+                                    <column id="0">0.153632919875</column>
+                                    <column id="1">565.156512081</column>
+                                </row>
+                                <row id="3">
+                                    <column id="0">0.242431200112</column>
+                                    <column id="1">556.190788081</column>
+                                </row>
+                                <row id="4">
+                                    <column id="0">0.388219742643</column>
+                                    <column id="1">554.287350805</column>
+                                </row>
+                                <row id="5">
+                                    <column id="0">0.61260542779</column>
+                                    <column id="1">546.778955785</column>
+                                </row>
+                                <row id="6">
+                                    <column id="0">0.99554872532</column>
+                                    <column id="1">541.93292023</column>
+                                </row>
+                                <row id="7">
+                                    <column id="0">1.57093721929</column>
+                                    <column id="1">543.326894902</column>
+                                </row>
+                                <row id="8">
+                                    <column id="0">2.47893902305</column>
+                                    <column id="1">531.224399415</column>
+                                </row>
+                                <row id="9">
+                                    <column id="0">3.91175386798</column>
+                                    <column id="1">521.023344618</column>
+                                </row>
+                                <row id="10">
+                                    <column id="0">6.26410391787</column>
+                                    <column id="1">521.280291404</column>
+                                </row>
+                                <row id="11">
+                                    <column id="0">9.88473350057</column>
+                                    <column id="1">510.869393145</column>
+                                </row>
+                                <row id="12">
+                                    <column id="0">15.3704841216</column>
+                                    <column id="1">492.738452486</column>
+                                </row>
+                                <row id="13">
+                                    <column id="0">24.7362926665</column>
+                                    <column id="1">459.988968583</column>
+                                </row>
+                                <row id="14">
+                                    <column id="0">39.4188757494</column>
+                                    <column id="1">447.168325299</column>
+                                </row>
+                                <row id="15">
+                                    <column id="0">61.2980038216</column>
+                                    <column id="1">412.012025759</column>
+                                </row>
+                                <row id="16">
+                                    <column id="0">99.6213529395</column>
+                                    <column id="1">385.638702015</column>
+                                </row>
+                            </rows>
+                        </data>
+                    </data>
+                </MeltViscosity>
+            </RheologicalViscosity>
+        </Rheological>
+    </PROPERTIES>
+    <MICROSTRUCTURE>
+        <ImageFile>
+            <File>http://localhost/nmr/blob?id=5978e5dbe74a1d157722955f</File>
+            <MicroscopyType>TEM</MicroscopyType>
+        </ImageFile>
+        <ImageFile>
+            <File>http://localhost/nmr/blob?id=5978e5d5e74a1d157722955d</File>
+            <MicroscopyType>TEM</MicroscopyType>
+        </ImageFile>
+    </MICROSTRUCTURE>
+</PolymerNanocomposite>
+    

@@ -1,0 +1,579 @@
+<PolymerNanocomposite>
+    <ID>E108_S1_Huang_2016</ID>
+    <Control_ID>E108_S1_Huang_2016</Control_ID>
+    <SchemaVersion>PNC_schema_041220</SchemaVersion>
+    <DatasetID>5e96fa91c9db0157d0737e39</DatasetID>
+    <SchemaID>5e96dbe7c49dc53363c20305</SchemaID>
+    <DATA_SOURCE>
+        <Citation>
+            <CommonFields>
+                <Author>Huang, Yanhui</Author>
+                <DOI>unpublished/doi-tMbKM2ba5aNwo2ZKPVucBS</DOI>
+                <Location>Materials Science and Engineering Department, Rensselaer Polytechnic Institute, Troy, USA</Location>
+            </CommonFields>
+        </Citation>
+    </DATA_SOURCE>
+    <MATERIALS>
+        <Matrix>
+            <MatrixComponent>
+                <ChemicalName>silicone</ChemicalName>
+                <StdChemicalName>Silicone rubber</StdChemicalName>
+                <uSMILES>O([Si]([*])([R])[R])[*]</uSMILES>
+                <PlasticType>elastomer</PlasticType>
+                <ManufacturerOrSourceName>Dow Corning</ManufacturerOrSourceName>
+                <TradeName>Sylgard 184</TradeName>
+                <Density>
+                    <description>inserted from ChemProps, NanoMine</description>
+                    <value>1.0</value>
+                    <unit>g/cm3</unit>
+                </Density>
+                <MatrixComponentComposition>
+                    <Constituent>fumed silica</Constituent>
+                    <Fraction>
+                        <mass>0.4</mass>
+                    </Fraction>
+                </MatrixComponentComposition>
+            </MatrixComponent>
+        </Matrix>
+    </MATERIALS>
+    <PROCESSING>
+        <SolutionProcessing>
+            <ChooseParameter>
+                <Mixing>
+                    <Description>The hardener was added at a 10:1 weight ratio before shear mixing at 3500 rpm for 1 min</Description>
+                    <MixingMethod>high shear mixing</MixingMethod>
+                    <ChemicalUsed>
+                        <description>Sylgard 184</description>
+                    </ChemicalUsed>
+                    <ChemicalUsed>
+                        <description>hardener</description>
+                    </ChemicalUsed>
+                    <RPM>
+                        <value>3500</value>
+                        <unit>rpm</unit>
+                    </RPM>
+                    <Time>
+                        <value>1</value>
+                        <unit>minutes</unit>
+                    </Time>
+                </Mixing>
+            </ChooseParameter>
+            <ChooseParameter>
+                <Molding>
+                    <MoldingMode>casting</MoldingMode>
+                    <MoldingInfo>
+                        <Description>The resin was cast in a flat aluminum dish.</Description>
+                        <Temperature>
+                            <value>110</value>
+                            <unit>Celsius</unit>
+                        </Temperature>
+                        <Time>
+                            <value>1.5</value>
+                            <unit>hours</unit>
+                        </Time>
+                        <AmbientCondition>vacuum</AmbientCondition>
+                    </MoldingInfo>
+                </Molding>
+            </ChooseParameter>
+            <ChooseParameter>
+                <Drying-Evaporation>
+                    <Description>The cured samples were stored in a desiccator and          conditioned at 70°C under vacuum overnight before dielectric          testing.</Description>
+                    <Temperature>
+                        <value>70</value>
+                        <unit>Celsius</unit>
+                    </Temperature>
+                    <AmbientCondition>vacuum</AmbientCondition>
+                </Drying-Evaporation>
+            </ChooseParameter>
+        </SolutionProcessing>
+    </PROCESSING>
+    <CHARACTERIZATION>
+        <Dynamic_Mechanical_Analysis>
+            <Equipment>DMTA V</Equipment>
+            <Description>The dynamic mechanical analysis (DMA) was carried out in a      frequency range of 1 – 60 Hz at room temperature to determine the sample      modulus.</Description>
+        </Dynamic_Mechanical_Analysis>
+        <Dielectric_and_Impedance_Spectroscopy_Analysis>
+            <Equipment>Novocontrol Alpha analyzer</Equipment>
+            <Description>The frequency dependent dielectric spectra were measured      using a Novocontrol Alpha analyzer. The sample was sandwiched between      two gold-coated electrodes and a sinusoidal voltage of 1 V was applied.      The amplitude and phase shift of the current in the external circuit was      measured as a function of the oscillating frequency.</Description>
+        </Dielectric_and_Impedance_Spectroscopy_Analysis>
+        <Pulsed_Electro_Acoustic>
+            <Description>The space charge distribution was measured using a      pulsed-electro-acoustic (PEA) method. The equipment has an Al bottom      electrode as ground and carbon black loaded semi-conductive (SC)      polyethylene as the top HVDC electrode. Both positive and negative power      supply were used to study the effect of the electrode.</Description>
+        </Pulsed_Electro_Acoustic>
+    </CHARACTERIZATION>
+    <PROPERTIES>
+        <Electrical>
+            <AC_DielectricDispersion>
+                <DielectricDispersionDependence>
+                    <FrequencyDependence>
+                        <condition>
+                            <temperature>
+                                <value>25</value>
+                                <unit>Celsius</unit>
+                            </temperature>
+                        </condition>
+                    </FrequencyDependence>
+                </DielectricDispersionDependence>
+                <Dielectric_Real_Permittivity>
+                    <data>
+                        <AxisLabel>
+                            <xName>Frequency</xName>
+                            <xUnit>Hz</xUnit>
+                            <yName>Real permittivity</yName>
+                        </AxisLabel>
+                        <data>
+                            <headers>
+                                <column id="0">Frequency (Hz)</column>
+                                <column id="1">Real permittivity</column>
+                            </headers>
+                            <rows>
+                                <row id="0">
+                                    <column id="0">0.00016293</column>
+                                    <column id="1">3.5055</column>
+                                </row>
+                                <row id="1">
+                                    <column id="0">0.00025808</column>
+                                    <column id="1">3.2293</column>
+                                </row>
+                                <row id="2">
+                                    <column id="0">0.0004088</column>
+                                    <column id="1">3.2184</column>
+                                </row>
+                                <row id="3">
+                                    <column id="0">0.00064753</column>
+                                    <column id="1">3.0873</column>
+                                </row>
+                                <row id="4">
+                                    <column id="0">0.0010257</column>
+                                    <column id="1">3.065</column>
+                                </row>
+                                <row id="5">
+                                    <column id="0">0.0016247</column>
+                                    <column id="1">3.0416</column>
+                                </row>
+                                <row id="6">
+                                    <column id="0">0.0025735</column>
+                                    <column id="1">3.0328</column>
+                                </row>
+                                <row id="7">
+                                    <column id="0">0.0040765</column>
+                                    <column id="1">3.0271</column>
+                                </row>
+                                <row id="8">
+                                    <column id="0">0.0064571</column>
+                                    <column id="1">3.022</column>
+                                </row>
+                                <row id="9">
+                                    <column id="0">0.010228</column>
+                                    <column id="1">3.0139</column>
+                                </row>
+                                <row id="10">
+                                    <column id="0">0.016201</column>
+                                    <column id="1">3.0113</column>
+                                </row>
+                                <row id="11">
+                                    <column id="0">0.025663</column>
+                                    <column id="1">3.012</column>
+                                </row>
+                                <row id="12">
+                                    <column id="0">0.04065</column>
+                                    <column id="1">3.0124</column>
+                                </row>
+                                <row id="13">
+                                    <column id="0">0.064389</column>
+                                    <column id="1">3.0123</column>
+                                </row>
+                                <row id="14">
+                                    <column id="0">0.10199</column>
+                                    <column id="1">3.0122</column>
+                                </row>
+                                <row id="15">
+                                    <column id="0">0.16156</column>
+                                    <column id="1">3.0107</column>
+                                </row>
+                                <row id="16">
+                                    <column id="0">0.25591</column>
+                                    <column id="1">3.0117</column>
+                                </row>
+                                <row id="17">
+                                    <column id="0">0.40535</column>
+                                    <column id="1">3.0117</column>
+                                </row>
+                                <row id="18">
+                                    <column id="0">0.64208</column>
+                                    <column id="1">3.0116</column>
+                                </row>
+                                <row id="19">
+                                    <column id="0">1.0171</column>
+                                    <column id="1">3.0118</column>
+                                </row>
+                                <row id="20">
+                                    <column id="0">1.611</column>
+                                    <column id="1">3.0118</column>
+                                </row>
+                                <row id="21">
+                                    <column id="0">2.5518</column>
+                                    <column id="1">3.0125</column>
+                                </row>
+                                <row id="22">
+                                    <column id="0">4.0421</column>
+                                    <column id="1">3.0132</column>
+                                </row>
+                                <row id="23">
+                                    <column id="0">6.4027</column>
+                                    <column id="1">3.0146</column>
+                                </row>
+                                <row id="24">
+                                    <column id="0">10.142</column>
+                                    <column id="1">3.0168</column>
+                                </row>
+                                <row id="25">
+                                    <column id="0">16.065</column>
+                                    <column id="1">3.0188</column>
+                                </row>
+                                <row id="26">
+                                    <column id="0">25.447</column>
+                                    <column id="1">3.0206</column>
+                                </row>
+                                <row id="27">
+                                    <column id="0">40.308</column>
+                                    <column id="1">3.0216</column>
+                                </row>
+                                <row id="28">
+                                    <column id="0">63.847</column>
+                                    <column id="1">3.0226</column>
+                                </row>
+                                <row id="29">
+                                    <column id="0">101.13</column>
+                                    <column id="1">3.0232</column>
+                                </row>
+                                <row id="30">
+                                    <column id="0">160.2</column>
+                                    <column id="1">3.0236</column>
+                                </row>
+                                <row id="31">
+                                    <column id="0">253.75</column>
+                                    <column id="1">3.024</column>
+                                </row>
+                                <row id="32">
+                                    <column id="0">401.94</column>
+                                    <column id="1">3.0242</column>
+                                </row>
+                                <row id="33">
+                                    <column id="0">636.67</column>
+                                    <column id="1">3.0246</column>
+                                </row>
+                                <row id="34">
+                                    <column id="0">1008.5</column>
+                                    <column id="1">3.0247</column>
+                                </row>
+                                <row id="35">
+                                    <column id="0">1597.5</column>
+                                    <column id="1">3.0249</column>
+                                </row>
+                                <row id="36">
+                                    <column id="0">2530.4</column>
+                                    <column id="1">3.025</column>
+                                </row>
+                                <row id="37">
+                                    <column id="0">4008.1</column>
+                                    <column id="1">3.0251</column>
+                                </row>
+                                <row id="38">
+                                    <column id="0">6348.8</column>
+                                    <column id="1">3.0253</column>
+                                </row>
+                                <row id="39">
+                                    <column id="0">10057.0</column>
+                                    <column id="1">3.0254</column>
+                                </row>
+                                <row id="40">
+                                    <column id="0">15930.0</column>
+                                    <column id="1">3.0255</column>
+                                </row>
+                                <row id="41">
+                                    <column id="0">25232.0</column>
+                                    <column id="1">3.0256</column>
+                                </row>
+                                <row id="42">
+                                    <column id="0">39968.0</column>
+                                    <column id="1">3.0255</column>
+                                </row>
+                                <row id="43">
+                                    <column id="0">63310.0</column>
+                                    <column id="1">3.0257</column>
+                                </row>
+                                <row id="44">
+                                    <column id="0">100280.0</column>
+                                    <column id="1">3.0259</column>
+                                </row>
+                                <row id="45">
+                                    <column id="0">158850.0</column>
+                                    <column id="1">3.026</column>
+                                </row>
+                                <row id="46">
+                                    <column id="0">251610.0</column>
+                                    <column id="1">3.0261</column>
+                                </row>
+                                <row id="47">
+                                    <column id="0">398560.0</column>
+                                    <column id="1">3.0263</column>
+                                </row>
+                                <row id="48">
+                                    <column id="0">631310.0</column>
+                                    <column id="1">3.0252</column>
+                                </row>
+                                <row id="49">
+                                    <column id="0">1000000.0</column>
+                                    <column id="1">3.0246</column>
+                                </row>
+                            </rows>
+                        </data>
+                    </data>
+                </Dielectric_Real_Permittivity>
+                <Dielectric_Loss_Permittivity>
+                    <data>
+                        <description>Imaginary permittivity</description>
+                        <AxisLabel>
+                            <xName>Frequency</xName>
+                            <xUnit>Hz</xUnit>
+                            <yName>Imaginary permittivity</yName>
+                        </AxisLabel>
+                        <data>
+                            <headers>
+                                <column id="0">Frequency (Hz)</column>
+                                <column id="1">Imaginary permittivity</column>
+                            </headers>
+                            <rows>
+                                <row id="0">
+                                    <column id="0">0.00016293</column>
+                                    <column id="1">0.66107</column>
+                                </row>
+                                <row id="1">
+                                    <column id="0">0.00025808</column>
+                                    <column id="1">0.46083</column>
+                                </row>
+                                <row id="2">
+                                    <column id="0">0.0004088</column>
+                                    <column id="1">0.26673</column>
+                                </row>
+                                <row id="3">
+                                    <column id="0">0.00064753</column>
+                                    <column id="1">0.15877</column>
+                                </row>
+                                <row id="4">
+                                    <column id="0">0.0010257</column>
+                                    <column id="1">0.13017</column>
+                                </row>
+                                <row id="5">
+                                    <column id="0">0.0016247</column>
+                                    <column id="1">0.095759</column>
+                                </row>
+                                <row id="6">
+                                    <column id="0">0.0025735</column>
+                                    <column id="1">0.074829</column>
+                                </row>
+                                <row id="7">
+                                    <column id="0">0.0040765</column>
+                                    <column id="1">0.047964</column>
+                                </row>
+                                <row id="8">
+                                    <column id="0">0.0064571</column>
+                                    <column id="1">0.035703</column>
+                                </row>
+                                <row id="9">
+                                    <column id="0">0.010228</column>
+                                    <column id="1">0.026038</column>
+                                </row>
+                                <row id="10">
+                                    <column id="0">0.016201</column>
+                                    <column id="1">0.021354</column>
+                                </row>
+                                <row id="11">
+                                    <column id="0">0.025663</column>
+                                    <column id="1">0.016173</column>
+                                </row>
+                                <row id="12">
+                                    <column id="0">0.04065</column>
+                                    <column id="1">0.004499</column>
+                                </row>
+                                <row id="13">
+                                    <column id="0">0.064389</column>
+                                    <column id="1">0.0023691</column>
+                                </row>
+                                <row id="14">
+                                    <column id="0">0.10199</column>
+                                    <column id="1">0.00087816</column>
+                                </row>
+                                <row id="15">
+                                    <column id="0">0.16156</column>
+                                    <column id="1">0.0012362</column>
+                                </row>
+                                <row id="16">
+                                    <column id="0">0.25591</column>
+                                    <column id="1">0.00036325</column>
+                                </row>
+                                <row id="17">
+                                    <column id="0">0.40535</column>
+                                    <column id="1">0.00041975</column>
+                                </row>
+                                <row id="18">
+                                    <column id="0">0.64208</column>
+                                    <column id="1">-0.0061555</column>
+                                </row>
+                                <row id="19">
+                                    <column id="0">1.0171</column>
+                                    <column id="1">0.0004551</column>
+                                </row>
+                                <row id="20">
+                                    <column id="0">1.611</column>
+                                    <column id="1">0.00036575</column>
+                                </row>
+                                <row id="21">
+                                    <column id="0">2.5518</column>
+                                    <column id="1">0.000669</column>
+                                </row>
+                                <row id="22">
+                                    <column id="0">4.0421</column>
+                                    <column id="1">0.00040965</column>
+                                </row>
+                                <row id="23">
+                                    <column id="0">6.4027</column>
+                                    <column id="1">0.00033012</column>
+                                </row>
+                                <row id="24">
+                                    <column id="0">10.142</column>
+                                    <column id="1">0.0003711</column>
+                                </row>
+                                <row id="25">
+                                    <column id="0">16.065</column>
+                                    <column id="1">0.00031567</column>
+                                </row>
+                                <row id="26">
+                                    <column id="0">25.447</column>
+                                    <column id="1">0.00012016</column>
+                                </row>
+                                <row id="27">
+                                    <column id="0">40.308</column>
+                                    <column id="1">0.00019435</column>
+                                </row>
+                                <row id="28">
+                                    <column id="0">63.847</column>
+                                    <column id="1">-0.00056011</column>
+                                </row>
+                                <row id="29">
+                                    <column id="0">101.13</column>
+                                    <column id="1">0.00016713</column>
+                                </row>
+                                <row id="30">
+                                    <column id="0">160.2</column>
+                                    <column id="1">0.00020674</column>
+                                </row>
+                                <row id="31">
+                                    <column id="0">253.75</column>
+                                    <column id="1">0.00018108</column>
+                                </row>
+                                <row id="32">
+                                    <column id="0">401.94</column>
+                                    <column id="1">0.00014879</column>
+                                </row>
+                                <row id="33">
+                                    <column id="0">636.67</column>
+                                    <column id="1">0.00015678</column>
+                                </row>
+                                <row id="34">
+                                    <column id="0">1008.5</column>
+                                    <column id="1">0.00015603</column>
+                                </row>
+                                <row id="35">
+                                    <column id="0">1597.5</column>
+                                    <column id="1">0.00020513</column>
+                                </row>
+                                <row id="36">
+                                    <column id="0">2530.4</column>
+                                    <column id="1">0.00021902</column>
+                                </row>
+                                <row id="37">
+                                    <column id="0">4008.1</column>
+                                    <column id="1">0.0001561</column>
+                                </row>
+                                <row id="38">
+                                    <column id="0">6348.8</column>
+                                    <column id="1">0.00020295</column>
+                                </row>
+                                <row id="39">
+                                    <column id="0">10057.0</column>
+                                    <column id="1">0.00022759</column>
+                                </row>
+                                <row id="40">
+                                    <column id="0">15930.0</column>
+                                    <column id="1">0.00029285</column>
+                                </row>
+                                <row id="41">
+                                    <column id="0">25232.0</column>
+                                    <column id="1">0.00041627</column>
+                                </row>
+                                <row id="42">
+                                    <column id="0">39968.0</column>
+                                    <column id="1">0.00038244</column>
+                                </row>
+                                <row id="43">
+                                    <column id="0">63310.0</column>
+                                    <column id="1">0.00043162</column>
+                                </row>
+                                <row id="44">
+                                    <column id="0">100280.0</column>
+                                    <column id="1">0.00056111</column>
+                                </row>
+                                <row id="45">
+                                    <column id="0">158850.0</column>
+                                    <column id="1">0.00076224</column>
+                                </row>
+                                <row id="46">
+                                    <column id="0">251610.0</column>
+                                    <column id="1">0.0010317</column>
+                                </row>
+                                <row id="47">
+                                    <column id="0">398560.0</column>
+                                    <column id="1">0.0014617</column>
+                                </row>
+                                <row id="48">
+                                    <column id="0">631310.0</column>
+                                    <column id="1">0.0015739</column>
+                                </row>
+                                <row id="49">
+                                    <column id="0">1000000.0</column>
+                                    <column id="1">0.0012617</column>
+                                </row>
+                            </rows>
+                        </data>
+                    </data>
+                </Dielectric_Loss_Permittivity>
+            </AC_DielectricDispersion>
+            <DielectricBreakdownStrength>
+                <WeibullParameter>
+                    <description>AC breakdown strength</description>
+                    <value>31.2</value>
+                    <unit>kV/mm</unit>
+                </WeibullParameter>
+                <WeibullParameter>
+                    <description>shape parameter</description>
+                    <value>16.5</value>
+                </WeibullParameter>
+            </DielectricBreakdownStrength>
+        </Electrical>
+    </PROPERTIES>
+    <MICROSTRUCTURE>
+        <Experimental_Sample_Info>
+            <SampleThickness>
+                <description>PEA sample thickness</description>
+                <value>370</value>
+                <unit>microns</unit>
+                <uncertainty>
+                    <type>absolute</type>
+                    <value>20</value>
+                </uncertainty>
+            </SampleThickness>
+        </Experimental_Sample_Info>
+    </MICROSTRUCTURE>
+</PolymerNanocomposite>
+    

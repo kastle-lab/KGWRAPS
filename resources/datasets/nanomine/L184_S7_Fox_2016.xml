@@ -1,0 +1,169 @@
+<PolymerNanocomposite>
+    <ID>L184_S7_Fox_2016</ID>
+    <DATA_SOURCE>
+        <Citation>
+            <CommonFields>
+                <CitationType>research article</CitationType>
+                <Publication>ACS Applied Mateials and Interfaces</Publication>
+                <Title>Simultaneously Tailoring Surface Energies and Thermal Stabilities of Cellulose Nanocrystals Using Ion Exchange E&#64256;ects on Polymer Composite Properties for Transportation, Infrastructure, and Renewable Energy Applications</Title>
+                <Author>Fox, Douglas M.</Author>
+                <Author>Rodriguez, Rebeca S.</Author>
+                <Author>Devilbiss, Mackenzie N.</Author>
+                <Author>Woodcock, Jeremiah</Author>
+                <Author>Davis, Chelsea S.</Author>
+                <Author>Sinko, Robert</Author>
+                <Author>Keten, Sinan</Author>
+                <Author>Gilman, Je&#64256;rey W.</Author>
+                <Keyword>cellulose nanocrystals, ionic liquids, polymer composites, epoxy, extrusion, dispersion</Keyword>
+                <Publisher>American Chemical Society</Publisher>
+                <PublicationYear>2016</PublicationYear>
+                <DOI>10.1021/acsami.6b06083</DOI>
+                <URL>http://pubs.acs.org/doi/abs/10.1021/acsami.6b06083</URL>
+                <Language>English</Language>
+            </CommonFields>
+            <CitationType>
+                <Journal>
+                    <ISSN>1944-8244</ISSN>
+                </Journal>
+            </CitationType>
+        </Citation>
+    </DATA_SOURCE>
+    <MATERIALS>
+        <Matrix>
+            <MatrixComponent>
+                <ChemicalName>epoxy</ChemicalName>
+                <PlasticType>thermoset</PlasticType>
+                <PolymerType>homopolymer</PolymerType>
+                <ManufacturerName>Sigma-Aldrich</ManufacturerName>
+            </MatrixComponent>
+        </Matrix>
+        <Filler>
+            <FillerComponent>
+                <ChemicalName>sulfated cellulose nanocrystals</ChemicalName>
+                <Abbreviation>Na-CNC</Abbreviation>
+                <ManufacturerName>University of Maine</ManufacturerName>
+                <ParticleSize>
+                    <FixedValue>
+                        <value>
+                            <value>6</value>
+                            <unit>nm</unit>
+                        </value>
+                    </FixedValue>
+                </ParticleSize>
+            </FillerComponent>
+            <FillerProcessing>
+                <ChooseParameter>
+                    <Mixing>
+                        <Description>Ion exchange</Description>
+                        <Mixer>glass chromatography column</Mixer>
+                        <MixingMethod>mechanical mixing</MixingMethod>
+                        <ChemicalUsed>Na ion form cation exchange resin</ChemicalUsed>
+                        <ChemicalUsed>NaCNC solution</ChemicalUsed>
+                    </Mixing>
+                </ChooseParameter>
+                <ChooseParameter>
+                    <Drying-Evaporation>
+                        <Temperature>
+                            <value>0</value>
+                            <unit>Celsius</unit>
+                        </Temperature>
+                        <Time>
+                            <value>2</value>
+                            <unit>days</unit>
+                            <uncertainty>
+                                <type>absolute</type>
+                                <value>1</value>
+                            </uncertainty>
+                        </Time>
+                        <Description>a Labconco FreeZone lyophilizer</Description>
+                    </Drying-Evaporation>
+                </ChooseParameter>
+            </FillerProcessing>
+            <FillerComposition>
+                <mass>0.02</mass>
+            </FillerComposition>
+        </Filler>
+    </MATERIALS>
+    <PROCESSING>
+        <SolutionProcessing>
+            <ChooseParameter>
+                <Mixing>
+                    <Mixer>FlakTek high speed centrifugal mixer</Mixer>
+                    <MixingMethod>blending</MixingMethod>
+                    <ChemicalUsed>Na-CNC</ChemicalUsed>
+                    <ChemicalUsed>diamine curing agent</ChemicalUsed>
+                    <RPM>
+                        <value>2500</value>
+                        <unit>rpm</unit>
+                    </RPM>
+                    <Time>
+                        <value>10</value>
+                        <unit>minutes</unit>
+                    </Time>
+                </Mixing>
+            </ChooseParameter>
+            <ChooseParameter>
+                <Mixing>
+                    <Mixer>FlakTek high speed centrifugal mixer</Mixer>
+                    <MixingMethod>blending</MixingMethod>
+                    <ChemicalUsed>Na-CNC</ChemicalUsed>
+                    <ChemicalUsed>diamine curing agent</ChemicalUsed>
+                    <ChemicalUsed>epoxy</ChemicalUsed>
+                    <RPM>
+                        <value>2500</value>
+                        <unit>rpm</unit>
+                    </RPM>
+                    <Time>
+                        <value>10</value>
+                        <unit>minutes</unit>
+                    </Time>
+                </Mixing>
+            </ChooseParameter>
+            <ChooseParameter>
+                <AmbientCondition>vacuum</AmbientCondition>
+            </ChooseParameter>
+            <ChooseParameter>
+                <Drying-Evaporation>
+                    <Temperature>
+                        <value>20</value>
+                        <unit>Celsius</unit>
+                    </Temperature>
+                    <Time>
+                        <value>24</value>
+                        <unit>hours</unit>
+                    </Time>
+                    <Description>curing</Description>
+                </Drying-Evaporation>
+            </ChooseParameter>
+            <ChooseParameter>
+                <Heating>
+                    <Temperature>
+                        <value>80</value>
+                        <unit>Celsius</unit>
+                    </Temperature>
+                    <Time>
+                        <value>2</value>
+                        <unit>hours</unit>
+                    </Time>
+                    <Description>curing</Description>
+                </Heating>
+            </ChooseParameter>
+        </SolutionProcessing>
+    </PROCESSING>
+    <CHARACTERIZATION>
+        <Differential_Scanning_Calorimetry>
+            <Equipment>TA Instruments Q-2000 differential scanning calorimeter</Equipment>
+            <Description>sample weight 4.8-6.4mg</Description>
+            <HeatingRate>
+                <value>10</value>
+                <unit>C/min</unit>
+            </HeatingRate>
+            <CoolingRate>
+                <value>10</value>
+                <unit>C/min</unit>
+            </CoolingRate>
+            <CycleInformation>3 cycles from -20 to 250 degree celsius, held at each end point for 2 min before reversing the heat flow</CycleInformation>
+        </Differential_Scanning_Calorimetry>
+    </CHARACTERIZATION>
+</PolymerNanocomposite>
+    

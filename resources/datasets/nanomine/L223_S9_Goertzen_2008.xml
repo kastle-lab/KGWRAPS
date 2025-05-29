@@ -1,0 +1,349 @@
+<PolymerNanocomposite>
+    <ID>L223_S9_Goertzen_2008</ID>
+    <Control_ID>L223_S1_Goertzen_2008</Control_ID>
+    <SchemaVersion>PNC_schema_041220</SchemaVersion>
+    <DatasetID>5e970be7c9db0157d0737e94</DatasetID>
+    <SchemaID>5e96dbe7c49dc53363c20305</SchemaID>
+    <DATA_SOURCE>
+        <Citation>
+            <CommonFields>
+                <CitationType>research article</CitationType>
+                <Publication>Composites Part A: Applied Science and Manufacturing</Publication>
+                <Title>Dynamic mechanical analysis of fumed silica/cyanate ester nanocomposites</Title>
+                <Author>Goertzen, William K.</Author>
+                <Author>Kessler, M.R.</Author>
+                <Keyword>Polymer matrix composites (PMCs)</Keyword>
+                <Keyword>Mechanical properties</Keyword>
+                <Keyword>Thermal properties</Keyword>
+                <Keyword>Micro-mechanics</Keyword>
+                <Publisher>Elsevier</Publisher>
+                <PublicationYear>2008</PublicationYear>
+                <DOI>10.1016/j.compositesa.2008.02.006</DOI>
+                <Volume>39</Volume>
+                <URL>http://linkinghub.elsevier.com/retrieve/pii/S1359835X08000341</URL>
+                <Language>English</Language>
+                <Location>Department of Materials Science and Engineering, Iowa State University, Ames, IA 50011, USA</Location>
+                <DateOfCitation>2018-06-30</DateOfCitation>
+            </CommonFields>
+            <CitationType>
+                <Journal>
+                    <ISSN>1359835X</ISSN>
+                    <Issue>5</Issue>
+                </Journal>
+            </CitationType>
+        </Citation>
+    </DATA_SOURCE>
+    <MATERIALS>
+        <Matrix>
+            <MatrixComponent>
+                <ChemicalName>bisphenol E cyanate ester</ChemicalName>
+                <StdChemicalName>Bisphenol E cyanate ester resin</StdChemicalName>
+                <uSMILES>CC(C1=CC=C(OC#N)C=C1)C2=CC=C(OC#N)C=C2</uSMILES>
+                <Abbreviation>BECy</Abbreviation>
+                <ManufacturerOrSourceName>Bryte Technologies (Morgan Hill, CA)</ManufacturerOrSourceName>
+                <TradeName>EX-1510</TradeName>
+                <Density>
+                    <description>inserted from ChemProps, NanoMine</description>
+                    <value>1.2</value>
+                    <unit>g/cm3</unit>
+                </Density>
+            </MatrixComponent>
+            <MatrixProcessing>
+                <ChooseParameter>
+                    <Heating>
+                        <Description>BECy monomer was preheated</Description>
+                        <Temperature>
+                            <value>60</value>
+                            <unit>Celsius</unit>
+                        </Temperature>
+                    </Heating>
+                </ChooseParameter>
+            </MatrixProcessing>
+            <Description>The matrix used was a low viscosity bisphenol E cyanate ester resin</Description>
+        </Matrix>
+        <Filler>
+            <FillerComponent>
+                <ChemicalName>silica</ChemicalName>
+                <StdChemicalName>Silicon dioxide</StdChemicalName>
+                <ManufacturerOrSourceName>Degussa (Frankfurt, Germany)</ManufacturerOrSourceName>
+                <TradeName>AEROSIL OX 50</TradeName>
+                <Density>
+                    <value>2.2</value>
+                    <unit>g/cm^3</unit>
+                </Density>
+                <SphericalParticleDiameter>
+                    <value>40</value>
+                    <unit>nm</unit>
+                </SphericalParticleDiameter>
+                <SurfaceArea>
+                    <specific>
+                        <value>50</value>
+                        <unit>m^2/g</unit>
+                    </specific>
+                </SurfaceArea>
+                <FillerComponentInComposite>
+                    <mass>0.018181818181818184</mass>
+                    <volume>0.01</volume>
+                </FillerComponentInComposite>
+            </FillerComponent>
+            <FillerProcessing>
+                <ChooseParameter>
+                    <Drying-Evaporation>
+                        <Description>Before mixing the fumed silica was dried under vacuum</Description>
+                        <AmbientCondition>vacuum</AmbientCondition>
+                    </Drying-Evaporation>
+                </ChooseParameter>
+            </FillerProcessing>
+            <FillerComposition>
+                <Fraction>
+                    <mass>
+                        <value>0.018181818181818184</value>
+                        <source>computed by NanoMine</source>
+                    </mass>
+                    <volume>
+                        <value>0.01</value>
+                        <source>reported</source>
+                    </volume>
+                </Fraction>
+            </FillerComposition>
+            <Description>The filler used was a hydrophilic fumed silica</Description>
+        </Filler>
+    </MATERIALS>
+    <PROCESSING>
+        <SolutionProcessing>
+            <ChooseParameter>
+                <Mixing>
+                    <Description>The monomer was mixed with a 25 mm diameter high-shear blade. The silica was also added to the suspension while mixing. the temperature of the suspension was maintained between 50 C and 65 C</Description>
+                    <MixingMethod>high shear mixing</MixingMethod>
+                    <RPM>
+                        <value>1000</value>
+                        <unit>rpm</unit>
+                    </RPM>
+                </Mixing>
+            </ChooseParameter>
+            <ChooseParameter>
+                <Mixing>
+                    <Description>The suspension was sonicated with a 3.2 mm diameter probe tip at a frequency of 23 kHz. The power output ranged between 16 and 18 W. the temperature of the suspension was maintained between 50 C and 65 C</Description>
+                    <Mixer>Fisher Model 100 Sonic Dismembrator</Mixer>
+                    <MixingMethod>ultra-sonication</MixingMethod>
+                    <Time>
+                        <value>30</value>
+                        <unit>seconds</unit>
+                    </Time>
+                </Mixing>
+            </ChooseParameter>
+            <ChooseParameter>
+                <Mixing>
+                    <Description>the temperature of the suspension was maintained between 50 C and 65 C</Description>
+                    <MixingMethod>high shear mixing</MixingMethod>
+                    <RPM>
+                        <value>2000</value>
+                        <unit>rpm</unit>
+                    </RPM>
+                    <Time>
+                        <value>2</value>
+                        <unit>minutes</unit>
+                    </Time>
+                </Mixing>
+            </ChooseParameter>
+            <ChooseParameter>
+                <Mixing>
+                    <Description>additional sonication continued for 30 s.  the temperature of the suspension was maintained between 50 C and 65 C</Description>
+                    <MixingMethod>ultra-sonication</MixingMethod>
+                    <Time>
+                        <value>30</value>
+                        <unit>seconds</unit>
+                    </Time>
+                </Mixing>
+            </ChooseParameter>
+            <ChooseParameter>
+                <Additive>
+                    <Description>A predetermined amount of catalyst was added to the dispersed suspension.  the temperature of the suspension was maintained between 50 C and 65 C</Description>
+                    <Additive>liquid phase organometallic-based polymerization catalyst (Bryte Technologies, EX-1510-B)</Additive>
+                    <Amount>
+                        <description>phr (parts per hundred resin)</description>
+                        <value>2</value>
+                        <unit>phr</unit>
+                    </Amount>
+                </Additive>
+            </ChooseParameter>
+            <ChooseParameter>
+                <Mixing>
+                    <Description>the temperature of the suspension was maintained between 50 C and 65 C</Description>
+                    <MixingMethod>high shear mixing</MixingMethod>
+                    <RPM>
+                        <value>2000</value>
+                        <unit>rpm</unit>
+                    </RPM>
+                    <Time>
+                        <value>2</value>
+                        <unit>minutes</unit>
+                    </Time>
+                </Mixing>
+            </ChooseParameter>
+            <ChooseParameter>
+                <Mixing>
+                    <Description>the temperature of the suspension was maintained between 50 C and 65 C</Description>
+                    <MixingMethod>ultra-sonication</MixingMethod>
+                    <Time>
+                        <value>15</value>
+                        <unit>seconds</unit>
+                    </Time>
+                </Mixing>
+            </ChooseParameter>
+            <ChooseParameter>
+                <Molding>
+                    <MoldingMode>hot-pressing</MoldingMode>
+                    <MoldingInfo>
+                        <Description>The suspensions were poured into high-temperature silicone rubber molds. the temperature of the suspension was maintained between 50 C and 65 C</Description>
+                    </MoldingInfo>
+                </Molding>
+            </ChooseParameter>
+            <ChooseParameter>
+                <Drying-Evaporation>
+                    <Description>the temperature of the suspension was maintained between 50 C and 65 C</Description>
+                    <Temperature>
+                        <value>60</value>
+                        <unit>Celsius</unit>
+                    </Temperature>
+                    <Time>
+                        <value>1</value>
+                        <unit>hours</unit>
+                    </Time>
+                    <Pressure>
+                        <value>3119.743349</value>
+                        <unit>Pa</unit>
+                    </Pressure>
+                    <AmbientCondition>vacuum</AmbientCondition>
+                </Drying-Evaporation>
+            </ChooseParameter>
+            <ChooseParameter>
+                <Heating>
+                    <Description>Suspensions were placed in a convection oven and cured. the temperature of the suspension was maintained between 50 C and 65 C</Description>
+                    <Temperature>
+                        <value>60</value>
+                        <unit>Celsius</unit>
+                    </Temperature>
+                </Heating>
+            </ChooseParameter>
+            <ChooseParameter>
+                <Heating>
+                    <Description>During the curing process the oven was heated at a rate of 1 C/min to 180 C and held for 2 hours. the temperature of the suspension was maintained between 50 C and 65 C</Description>
+                    <Temperature>
+                        <value>180</value>
+                        <unit>Celsius</unit>
+                    </Temperature>
+                    <Time>
+                        <value>2</value>
+                        <unit>hours</unit>
+                    </Time>
+                </Heating>
+            </ChooseParameter>
+            <ChooseParameter>
+                <Heating>
+                    <Description>Curing process continued. Heated to 250 C at 1 C/min and held for 2 hrs. the temperature of the suspension was maintained between 50 C and 65 C</Description>
+                    <Temperature>
+                        <value>250</value>
+                        <unit>Celsius</unit>
+                    </Temperature>
+                    <Time>
+                        <value>2</value>
+                        <unit>hours</unit>
+                    </Time>
+                </Heating>
+            </ChooseParameter>
+            <ChooseParameter>
+                <Cooling>
+                    <Description>For the final step in curing, the suspensions were cooled to ambient temp. at 5 C/min. the temperature of the suspension was maintained between 50 C and 65 C</Description>
+                </Cooling>
+            </ChooseParameter>
+            <ChooseParameter>
+                <Other>Free-standing post-cures were conducted at temperatures of 180, 210, 240, and 270 C for 2 h. the temperature of the suspension was maintained between 50 C and 65 C</Other>
+            </ChooseParameter>
+            <ChooseParameter>
+                <Drying-Evaporation>
+                    <Description>Prior to testing all samples were dried and kept in a dry environment. the temperature of the suspension was maintained between 50 C and 65 C</Description>
+                    <Temperature>
+                        <value>120</value>
+                        <unit>Celsius</unit>
+                    </Temperature>
+                    <Time>
+                        <value>6</value>
+                        <unit>hours</unit>
+                    </Time>
+                    <AmbientCondition>vacuum</AmbientCondition>
+                </Drying-Evaporation>
+            </ChooseParameter>
+        </SolutionProcessing>
+    </PROCESSING>
+    <CHARACTERIZATION>
+        <Dynamic_Mechanical_Analysis>
+            <Equipment>TA Instruments (New Castle, Delaware, USA) dynamic mechanical analyzer (DMA) Q800</Equipment>
+        </Dynamic_Mechanical_Analysis>
+    </CHARACTERIZATION>
+    <PROPERTIES>
+        <Viscoelastic>
+            <DynamicProperties>
+                <MeasurementMode>three-point bending</MeasurementMode>
+                <MeasurementMethod>DMA</MeasurementMethod>
+                <DMA_mode>
+                    <TemperatureSweep>
+                        <condition>
+                            <frequency>
+                                <value>1</value>
+                                <unit>Hz</unit>
+                            </frequency>
+                            <strainAmplitude>
+                                <value>30</value>
+                                <unit>micrometers</unit>
+                            </strainAmplitude>
+                        </condition>
+                    </TemperatureSweep>
+                </DMA_mode>
+                <DynamicPropertyProfile>
+                    <description>Storage modulus at 30 C</description>
+                    <value>2.88993211</value>
+                    <unit>GPa</unit>
+                    <uncertainty>
+                        <type>absolute</type>
+                        <value>0.013009033</value>
+                    </uncertainty>
+                </DynamicPropertyProfile>
+            </DynamicProperties>
+            <DynamicProperties>
+                <MeasurementMode>three-point bending</MeasurementMode>
+                <MeasurementMethod>DMA</MeasurementMethod>
+                <DMA_mode>
+                    <TemperatureSweep>
+                        <condition>
+                            <frequency>
+                                <value>1</value>
+                                <unit>Hz</unit>
+                            </frequency>
+                            <strainAmplitude>
+                                <value>30</value>
+                                <unit>micrometers</unit>
+                            </strainAmplitude>
+                        </condition>
+                    </TemperatureSweep>
+                </DMA_mode>
+                <DynamicPropertyProfile>
+                    <description>Storage modulus at (Tg + 30 C)</description>
+                    <value>35.65118625</value>
+                    <unit>MPa</unit>
+                    <uncertainty>
+                        <type>absolute</type>
+                        <value>2.08499913</value>
+                    </uncertainty>
+                </DynamicPropertyProfile>
+            </DynamicProperties>
+        </Viscoelastic>
+        <Thermal>
+            <GlassTransitionTemperature>
+                <value>301.6708466</value>
+                <unit>Celsius</unit>
+            </GlassTransitionTemperature>
+        </Thermal>
+    </PROPERTIES>
+</PolymerNanocomposite>
+    

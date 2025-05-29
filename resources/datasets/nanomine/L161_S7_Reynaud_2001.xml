@@ -1,0 +1,135 @@
+<PolymerNanocomposite>
+    <ID>L161_S7_Reynaud_2001</ID>
+    <DATA_SOURCE>
+        <Citation>
+            <CommonFields>
+                <CitationType>research article</CitationType>
+                <Publication>Polymer</Publication>
+                <Title>Nanofillers in polymeric matrix: a study on silica reinforced PA6</Title>
+                <Author>Reynaud, E.</Author>
+                <Author>Jouen, T</Author>
+                <Author>Gauthier, C</Author>
+                <Author>Vigier, G</Author>
+                <Author>Varlet, J</Author>
+                <Keyword>Nanoscopic filler</Keyword>
+                <Keyword>Polyamide</Keyword>
+                <Keyword>Nanocomposite</Keyword>
+                <Publisher>Elsevier Science Ltd</Publisher>
+                <PublicationYear>2001</PublicationYear>
+                <DOI>10.1016/S0032-3861(01)00446-3</DOI>
+                <Volume>42</Volume>
+                <URL>https://goo.gl/awaFub</URL>
+                <Language>English</Language>
+                <Location>France</Location>
+                <DateOfCitation>7/8/2016</DateOfCitation>
+            </CommonFields>
+            <CitationType>
+                <Journal>
+                    <ISSN>0032-3861</ISSN>
+                    <Issue>21</Issue>
+                </Journal>
+            </CitationType>
+        </Citation>
+    </DATA_SOURCE>
+    <MATERIALS>
+        <Matrix>
+            <MatrixComponent>
+                <ChemicalName>polyamide</ChemicalName>
+            </MatrixComponent>
+        </Matrix>
+        <Filler>
+            <FillerComponent>
+                <ChemicalName>silica</ChemicalName>
+                <ParticleSize>
+                    <value>25</value>
+                    <unit>nm</unit>
+                </ParticleSize>
+            </FillerComponent>
+        </Filler>
+    </MATERIALS>
+    <PROCESSING>
+        <In-SituPolymerization>
+            <ChooseParameter>
+                <Additive>
+                    <Description>silica sol (Klebsol)</Description>
+                    <Additive>Caprolactane</Additive>
+                </Additive>
+            </ChooseParameter>
+            <ChooseParameter>
+                <Drying-Evaporation>
+                    <Temperature>
+                        <value>95</value>
+                        <unit>Celsius</unit>
+                    </Temperature>
+                    <Time>
+                        <value>12</value>
+                        <unit>hours</unit>
+                    </Time>
+                </Drying-Evaporation>
+            </ChooseParameter>
+        </In-SituPolymerization>
+    </PROCESSING>
+    <CHARACTERIZATION>
+        <Dynamic_Mechanical_Analysis>
+            <Equipment>Rheometric RMS800</Equipment>
+        </Dynamic_Mechanical_Analysis>
+        <Differential_Scanning_Calorimetry>
+            <Equipment>Perkin Elmer DSC7</Equipment>
+            <HeatingRate>
+                <value>10</value>
+                <unit>degrees C per min</unit>
+            </HeatingRate>
+        </Differential_Scanning_Calorimetry>
+    </CHARACTERIZATION>
+    <PROPERTIES>
+        <Mechanical>
+            <Tensile>
+                <LoadingProfile>
+                    <description>Modulus (GPa) v Filler Content (wt %)</description>
+                    <data>
+                        <headers>
+                            <column id="0">Filler Content (wt %)</column>
+                            <column id="1">Modulus (GPa)</column>
+                        </headers>
+                        <rows>
+                            <row id="0">
+                                <column id="0">11.02492303408159</column>
+                                <column id="1">2.6268351923761193</column>
+                            </row>
+                            <row id="1">
+                                <column id="0">5.437274710314206</column>
+                                <column id="1">2.311112486269899</column>
+                            </row>
+                            <row id="2">
+                                <column id="0">-0.06837977072665158</column>
+                                <column id="1">2.0859078884264917</column>
+                            </row>
+                        </rows>
+                    </data>
+                </LoadingProfile>
+            </Tensile>
+            <Compression>
+                <LoadingProfile>
+                    <description>Yield Point v Composite Filler Content %</description>
+                    <data>
+                        <headers>
+                            <column id="0">Filler content (wt %)</column>
+                            <column id="1">sigma(yc)/sigma(yp)</column>
+                        </headers>
+                        <rows>
+                            <row id="0">
+                                <column id="0">11.039689821528992</column>
+                                <column id="1">1.3004424778761061</column>
+                            </row>
+                            <row id="1">
+                                <column id="0">-0.021191582561339573</column>
+                                <column id="1">0.997787610619469</column>
+                            </row>
+                        </rows>
+                    </data>
+                </LoadingProfile>
+            </Compression>
+        </Mechanical>
+    </PROPERTIES>
+</PolymerNanocomposite>
+    

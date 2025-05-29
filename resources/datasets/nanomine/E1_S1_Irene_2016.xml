@@ -1,0 +1,296 @@
+  <PolymerNanocomposite>
+  <ID>66c25cc02f600af3d72ca3ed</ID>
+  <Control_ID>E1_S1_Irene_2016.xml</Control_ID>
+  <DATA_SOURCE>
+    <Citation>
+      <CommonFields>
+        <YourName>Jiahui Yang</YourName>
+        <YourEmail>jiahui.yang@duke.edu</YourEmail>
+        <Origin>experiments</Origin>
+        <CitationType>lab-generated</CitationType>
+        <PublicationType>research article</PublicationType>
+        <DOI>10.1007/s10853-015-9698-1</DOI>
+        <Publication>Journal of Materials Science</Publication>
+        <Title>Toward the development of a quantitative tool for predicting dispersion of nanocomposites under non-equilibrium processing conditions</Title>
+        <Author>Irene Hassinger</Author>
+        <Author>Xiaolin Li</Author>
+        <Keyword>PMMA</Keyword>
+        <Keyword>Polymer Nanocomposites</Keyword>
+        <PublicationYear>2016</PublicationYear>
+        <Volume>51</Volume>
+        <URL>https://link.springer.com/article/10.1007/s10853-015-9698-1</URL>
+        <Language>English</Language>
+      </CommonFields>
+    </Citation>
+  </DATA_SOURCE>
+  <MATERIALS>
+    <Matrix>
+      <MatrixComponent>
+        <ChemicalName>Polystyrene</ChemicalName>
+        <Abbreviation>PS</Abbreviation>
+        <PlasticType>thermoplastic</PlasticType>
+        <PolymerClass>Polyolefines</PolymerClass>
+        <PolymerType>homopolymer</PolymerType>
+      </MatrixComponent>
+    </Matrix>
+    <Filler>
+      <FillerComponent>
+        <Description>SiO2-N particles</Description>
+        <ChemicalName>Silicon Dioxide</ChemicalName>
+        <Abbreviation>SiO2-N</Abbreviation>
+        <FillerComponentComposition>
+          <mass>2 wt%</mass>
+        </FillerComponentComposition>
+        <FillerComponentInComposite>
+          <mass>2 wt%</mass>
+          <volume>2 wt%</volume>
+        </FillerComponentInComposite>
+        <ParticleSurfaceTreatment>
+          <ChemicalName>Aminopropyldimethylethoxysilane</ChemicalName>
+          <Abbreviation>APDEMS</Abbreviation>
+          <ManufacturerOrSourceName>Geleste Inc.</ManufacturerOrSourceName>
+          <SurfaceChemistryProcessing>
+            <ChooseParameter>
+              <Mixing>
+                <Description>The nanoparticle-polymer mixture was milled in a jet milling machine</Description>
+                <Mixer>
+                  <value>Jet milling machine</value>
+                </Mixer>
+                <MixingMethod>roll milling</MixingMethod>
+                <ChemicalUsed>
+                  <description>Silica</description>
+                </ChemicalUsed>
+                <ChemicalUsed>
+                  <description>Water</description>
+                </ChemicalUsed>
+                <ChemicalUsed>
+                  <description>PS</description>
+                </ChemicalUsed>
+              </Mixing>
+            </ChooseParameter>
+            <ChooseParameter>
+              <Cooling>
+                <Description>After synthesis, the nanoparticle-polymer mixture was cooled down to room temperature</Description>
+                <Temperature>
+                  <value>Room temperature</value>
+                </Temperature>
+                <AmbientCondition>inert (nitrogen, argon, etc)</AmbientCondition>
+              </Cooling>
+            </ChooseParameter>
+            <ChooseParameter>
+              <Drying-Evaporation>
+                <Description>Solvent evaporated using rotor evaporator and dried in a vacuum oven</Description>
+                <Pressure>
+                  <value>Vacuum conditions</value>
+                </Pressure>
+                <AmbientCondition>vacuum</AmbientCondition>
+              </Drying-Evaporation>
+            </ChooseParameter>
+            <ChooseParameter>
+              <Solvent>
+                <SolventName>Tetrahydrofuran (THF)</SolventName>
+                <SolventAmount>
+                  <value>50</value>
+                  <unit>ml</unit>
+                </SolventAmount>
+              </Solvent>
+            </ChooseParameter>
+            <ChooseParameter>
+              <Centrifugation>Used</Centrifugation>
+            </ChooseParameter>
+          </SurfaceChemistryProcessing>
+        </ParticleSurfaceTreatment>
+      </FillerComponent>
+    </Filler>
+  </MATERIALS>
+  <CHARACTERIZATION>
+    <Microscopy>
+      <Transmission_Electron_Microscopy>
+        <EquipmentUsed>JEOL-2010 transmission electron microscope</EquipmentUsed>
+        <Description>High-resolution TEM for observing fine details of nanoparticles</Description>
+        <Magnification>
+          <value>60000</value>
+          <unit>x</unit>
+        </Magnification>
+      </Transmission_Electron_Microscopy>
+    </Microscopy>
+    <Thermochemical>
+      <Thermogravimetric_Analysis>
+        <Description>Particle content of nanocomposites was determined by heating samples at 10 K/min up to 700 °C and holding at 700 °C for 5 min.</Description>
+      </Thermogravimetric_Analysis>
+    </Thermochemical>
+    <Others>
+      <Rheometery>
+        <RheometerType>plate</RheometerType>
+        <Description>Samples pressed at 180 °C, size 25 mm, gap set to 2 mm, shear rate changed in rotation mode. Viscosity measured at various temperatures (200, 210, 220 °C for PS)</Description>
+      </Rheometery>
+    </Others>
+  </CHARACTERIZATION>
+  <PROPERTIES>
+    <Viscoelastic>
+      <DynamicProperties>
+        <Description>Parallel-plate rheometer</Description>
+        <MeasurementMode>shear</MeasurementMode>
+        <MeasurementMethod>DMA</MeasurementMethod>
+        <DMA_mode>
+          <FrequencySweep>
+            <condition>
+              <temperature>
+                <description>200-220 °C for PS</description>
+                <unit>Celsius</unit>
+              </temperature>
+            </condition>
+          </FrequencySweep>
+          <StrainSweep>
+            <condition>
+              <temperature>
+                <description>200-220 °C for PS</description>
+                <unit>Celsius</unit>
+              </temperature>
+            </condition>
+          </StrainSweep>
+        </DMA_mode>
+      </DynamicProperties>
+    </Viscoelastic>
+    <Electrical>
+      <DielectricBreakdownStrength>
+        <WeibullParameter>
+          <description>scale parameter</description>
+        </WeibullParameter>
+        <WeibullParameter>
+          <description>shape parameter</description>
+        </WeibullParameter>
+      </DielectricBreakdownStrength>
+    </Electrical>
+    <Volumetric>
+      <InterfacialTension>
+        <description>The ratio of work of adhesion between filler and polymer to the work of adhesion between filler to filler (WPF/WFF).</description>
+        <value>0.95</value>
+      </InterfacialTension>
+    </Volumetric>
+    <Rheological>
+      <RheologicalComplexModulus>
+        <RheometerMode>
+          <FrequencySweep>
+            <condition>
+              <temperature>
+                <description>200-220 °C for PS</description>
+                <unit>Celsius</unit>
+              </temperature>
+            </condition>
+          </FrequencySweep>
+          <StrainSweep>
+            <condition>
+              <temperature>
+                <description>200-220 °C for PS</description>
+                <unit>Celsius</unit>
+              </temperature>
+            </condition>
+          </StrainSweep>
+        </RheometerMode>
+        <RheologicalMasterCurve>
+          <data>/api/files/substantial_gayal_guglielma-2024-08-18T20:47:37.415Z-Rheology (20rpm).xlsx?isStore=true</data>
+        </RheologicalMasterCurve>
+      </RheologicalComplexModulus>
+      <RheologicalViscosity>
+        <RheometerMode>
+          <FrequencySweep>
+            <condition>
+              <temperature>
+                <description>200-220 °C for PS</description>
+                <unit>Celsius</unit>
+              </temperature>
+            </condition>
+          </FrequencySweep>
+          <StrainSweep>
+            <condition>
+              <temperature>
+                <description>200-220 °C for PS</description>
+                <unit>Celsius</unit>
+              </temperature>
+            </condition>
+          </StrainSweep>
+        </RheometerMode>
+      </RheologicalViscosity>
+    </Rheological>
+  </PROPERTIES>
+  <MICROSTRUCTURE>
+    <ImageFile>
+      <File>/api/files/substantial_gayal_guglielma-2024-08-18T20:48:31.036Z-sample7-20rpm-50kx.tif?isStore=true</File>
+      <Description>TEM 20 RPM 50kx</Description>
+      <MicroscopyType>TEM</MicroscopyType>
+      <Type>grayscale</Type>
+    </ImageFile>
+    <ImageFile>
+      <File>/api/files/substantial_gayal_guglielma-2024-08-18T20:49:05.969Z-sample7-20rpm-60kx.tif?isStore=true</File>
+      <Description>TEM 20 RPM 60kx</Description>
+      <MicroscopyType>TEM</MicroscopyType>
+      <Type>grayscale</Type>
+    </ImageFile>
+    <ImageFile>
+      <File>/api/files/substantial_gayal_guglielma-2024-08-18T20:49:31.053Z-sample7-20rpm-100kx.tif?isStore=true</File>
+      <Description>TEM 20 RPM 100kx</Description>
+      <MicroscopyType>TEM</MicroscopyType>
+      <Type>grayscale</Type>
+    </ImageFile>
+    <ImageFile>
+      <File>/api/files/substantial_gayal_guglielma-2024-08-18T20:49:49.420Z-sample7-20rpm-150kx-1.tif?isStore=true</File>
+      <Description>TEM 20 RPM 150kx</Description>
+      <MicroscopyType>TEM</MicroscopyType>
+      <Type>grayscale</Type>
+    </ImageFile>
+    <ImageFile>
+      <File>/api/files/substantial_gayal_guglielma-2024-08-18T20:50:09.340Z-sample7-20rpm-200kx-1.tif?isStore=true</File>
+      <Description>TEM 20 RPM 200kx</Description>
+    </ImageFile>
+    <ImageFile>
+      <File>/api/files/substantial_gayal_guglielma-2024-08-18T20:50:43.359Z-sample7-vorextrusion-1kx.png?isStore=true</File>
+      <Description>SEM 1kx</Description>
+      <MicroscopyType>SEM</MicroscopyType>
+      <Type>grayscale</Type>
+    </ImageFile>
+    <ImageFile>
+      <File>/api/files/substantial_gayal_guglielma-2024-08-18T20:52:56.948Z-sample7-vorextrusion-2kx.tif?isStore=true</File>
+      <Description>SEM 2kx</Description>
+    </ImageFile>
+    <ImageFile>
+      <File>/api/files/substantial_gayal_guglielma-2024-08-18T20:53:08.000Z-sample7-vorextrusion-5kx.tif?isStore=true</File>
+      <Description>SEM 5kx</Description>
+    </ImageFile>
+    <ImageFile>
+      <File>/api/files/substantial_gayal_guglielma-2024-08-18T20:53:23.983Z-sample7-vorextrusion-10kx.tif?isStore=true</File>
+      <Description>SEM 10kx</Description>
+    </ImageFile>
+    <ImageFile>
+      <File>/api/files/substantial_gayal_guglielma-2024-08-18T20:53:35.723Z-sample7-vorextrusion-20kx.tif?isStore=true</File>
+      <Description>SEM 20kx</Description>
+    </ImageFile>
+    <ImageFile>
+      <File>/api/files/substantial_gayal_guglielma-2024-08-18T20:53:47.515Z-sample7-vorextrusion-30kx.tif?isStore=true</File>
+      <Description> SEM 30kx</Description>
+    </ImageFile>
+    <ImageFile>
+      <File>/api/files/substantial_gayal_guglielma-2024-08-18T20:54:06.795Z-sample7-vorextrusion-65kx.tif?isStore=true</File>
+      <Description> SEM 65kx</Description>
+    </ImageFile>
+    <ImageFile>
+      <File>/api/files/substantial_gayal_guglielma-2024-08-18T20:55:28.153Z-sample7-vorextrusion-75kx.png?isStore=true</File>
+      <Description> SEM 75kx</Description>
+    </ImageFile>
+    <ImageFile>
+      <File>/api/files/substantial_gayal_guglielma-2024-08-18T21:24:12.327Z-sample7-vorextrusion-90x.tif?isStore=true</File>
+      <Description> SEM 90kx</Description>
+      <MicroscopyType>SEM</MicroscopyType>
+      <Type>grayscale</Type>
+    </ImageFile>
+    <ImageFile>
+      <File>/api/files/substantial_gayal_guglielma-2024-08-18T21:24:49.387Z-sample7-vorextrusion-100x.png?isStore=true</File>
+      <Description> SEM 100kx</Description>
+    </ImageFile>
+    <ImageFile>
+      <File>/api/files/substantial_gayal_guglielma-2024-08-18T21:25:03.212Z-sample7-vorextrusion-400x.tif?isStore=true</File>
+      <Description> SEM 400kx</Description>
+    </ImageFile>
+  </MICROSTRUCTURE>
+</PolymerNanocomposite>
+    

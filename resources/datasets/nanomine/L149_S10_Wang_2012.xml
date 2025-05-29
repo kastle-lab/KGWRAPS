@@ -1,0 +1,191 @@
+<PolymerNanocomposite>
+    <ID>L149_S10_Wang_2012</ID>
+    <Control_ID>L149_S1_Wang_2012</Control_ID>
+    <SchemaVersion>PNC_schema_041220</SchemaVersion>
+    <DatasetID>5e97032dc9db0157d0737e61</DatasetID>
+    <SchemaID>5e96dbe7c49dc53363c20305</SchemaID>
+    <DATA_SOURCE>
+        <Citation>
+            <CommonFields>
+                <CitationType>research article</CitationType>
+                <Publication>IEEE Transactions on Dielectrics and Electrical Insulation</Publication>
+                <Title>Effect of high aspect ratio filler on dielectric properties of polymer composites: a study on barium titanate fibers and graphene platelets</Title>
+                <Author>Wang, Zepu</Author>
+                <Author>Nelson, J. K.</Author>
+                <Author>Miao, Jianjun</Author>
+                <Author>Linhardt, R. J.</Author>
+                <Author>Schadler, L. S.</Author>
+                <Author>Hillborg, H.</Author>
+                <Author>Zhao, Su</Author>
+                <Publisher>IEEE</Publisher>
+                <PublicationYear>2012</PublicationYear>
+                <DOI>10.1109/TDEI.2012.6215100</DOI>
+                <Volume>19</Volume>
+                <URL>http://ieeexplore.ieee.org/document/6215100/</URL>
+                <DateOfCitation>2019-05-08</DateOfCitation>
+            </CommonFields>
+            <CitationType>
+                <Journal>
+                    <ISSN>1070-9878</ISSN>
+                    <Issue>3</Issue>
+                </Journal>
+            </CitationType>
+        </Citation>
+    </DATA_SOURCE>
+    <MATERIALS>
+        <Matrix>
+            <MatrixComponent>
+                <ChemicalName>poly(dimethyl siloxane)</ChemicalName>
+                <StdChemicalName>Silicone rubber</StdChemicalName>
+                <uSMILES>O([Si]([*])([R])[R])[*]</uSMILES>
+                <Abbreviation>PDMS</Abbreviation>
+                <ManufacturerOrSourceName>Dow Corning</ManufacturerOrSourceName>
+                <TradeName>Sylgard 184</TradeName>
+                <Density>
+                    <description>inserted from ChemProps, NanoMine</description>
+                    <value>1.0</value>
+                    <unit>g/cm3</unit>
+                </Density>
+            </MatrixComponent>
+        </Matrix>
+        <Filler>
+            <FillerComponent>
+                <ChemicalName>graphene platelet</ChemicalName>
+                <StdChemicalName>Graphene</StdChemicalName>
+                <Abbreviation>GPL</Abbreviation>
+                <Density>
+                    <description>inserted from ChemProps, NanoMine</description>
+                    <value>2.267</value>
+                    <unit>g/cm3</unit>
+                </Density>
+                <FillerComponentInComposite>
+                    <mass>0.011711241655477054</mass>
+                    <volume>0.0052</volume>
+                </FillerComponentInComposite>
+            </FillerComponent>
+            <FillerProcessing>
+                <ChooseParameter>
+                    <Heating>
+                        <Description>graphite oxide was subjected to thermal shock (2000 C/min), reducing it to GPL</Description>
+                    </Heating>
+                </ChooseParameter>
+            </FillerProcessing>
+            <FillerComposition>
+                <Fraction>
+                    <mass>
+                        <value>0.011711241655477054</value>
+                        <source>computed by NanoMine</source>
+                    </mass>
+                    <volume>
+                        <value>0.0052</value>
+                        <source>reported</source>
+                    </volume>
+                </Fraction>
+            </FillerComposition>
+        </Filler>
+    </MATERIALS>
+    <PROCESSING>
+        <SolutionProcessing>
+            <ChooseParameter>
+                <Mixing>
+                    <Mixer>FlackTek Speed Mixer</Mixer>
+                    <ChemicalUsed>
+                        <description>precursor Sylgard 184A</description>
+                    </ChemicalUsed>
+                    <ChemicalUsed>
+                        <description>GPLs</description>
+                    </ChemicalUsed>
+                    <RPM>
+                        <value>3000</value>
+                        <unit>rpm</unit>
+                    </RPM>
+                    <Time>
+                        <value>20</value>
+                        <unit>minutes</unit>
+                    </Time>
+                </Mixing>
+            </ChooseParameter>
+            <ChooseParameter>
+                <Mixing>
+                    <Description>ratio of Sylgard 184A and 184B was 10:1 by mass</Description>
+                    <ChemicalUsed>
+                        <description>Sylgard 184A (containing the GPLs)</description>
+                    </ChemicalUsed>
+                    <ChemicalUsed>
+                        <description>Sylgard 184B (crosslinker)</description>
+                    </ChemicalUsed>
+                </Mixing>
+            </ChooseParameter>
+            <ChooseParameter>
+                <Heating>
+                    <Description>precursors cured in a mould </Description>
+                    <Temperature>
+                        <value>150</value>
+                        <unit>Celsius</unit>
+                    </Temperature>
+                    <Time>
+                        <value>24</value>
+                        <unit>hours</unit>
+                    </Time>
+                </Heating>
+            </ChooseParameter>
+        </SolutionProcessing>
+        <Other_Processing>
+            <ChooseParameter>
+                <Drying-Evaporation>
+                    <Description>Prepared samples were dried in an oven prior to dielectric testing</Description>
+                    <Temperature>
+                        <value>120</value>
+                        <unit>Celsius</unit>
+                    </Temperature>
+                    <Time>
+                        <value>12</value>
+                        <unit>hours</unit>
+                    </Time>
+                </Drying-Evaporation>
+            </ChooseParameter>
+        </Other_Processing>
+    </PROCESSING>
+    <CHARACTERIZATION>
+        <Scanning_Electron_Microscopy>
+            <EquipmentUsed>Carl Zeiss Supra scanning electron microscope</EquipmentUsed>
+        </Scanning_Electron_Microscopy>
+        <Dielectric_and_Impedance_Spectroscopy_Analysis>
+            <Equipment>Novocontrol alpha high resolution dielectric impedance analyzer</Equipment>
+        </Dielectric_and_Impedance_Spectroscopy_Analysis>
+        <XRay_Diffraction_and_Scattering>
+            <Equipment>Bruker D8 Discover X-ray diffractometer</Equipment>
+        </XRay_Diffraction_and_Scattering>
+        <Thermogravimetric_Analysis>
+            <Equipment>TA Instruments Q50 thermogravimetric analyzer</Equipment>
+        </Thermogravimetric_Analysis>
+    </CHARACTERIZATION>
+    <PROPERTIES>
+        <Electrical>
+            <AC_DielectricDispersion>
+                <Description>dielectric constant and dissipation factor of composites at 60 Hz</Description>
+                <Dielectric_Real_Permittivity>
+                    <description>dielectric constant</description>
+                    <value>16.16819049</value>
+                </Dielectric_Real_Permittivity>
+                <Dielectric_Loss_Tangent>
+                    <value>0.0387192119171778</value>
+                </Dielectric_Loss_Tangent>
+            </AC_DielectricDispersion>
+        </Electrical>
+    </PROPERTIES>
+    <MICROSTRUCTURE>
+        <Experimental_Sample_Info>
+            <SampleSize>
+                <description>diameter of planar samples</description>
+                <value>3.175</value>
+                <unit>cm</unit>
+            </SampleSize>
+            <SampleThickness>
+                <value>300</value>
+                <unit>micron</unit>
+            </SampleThickness>
+        </Experimental_Sample_Info>
+    </MICROSTRUCTURE>
+</PolymerNanocomposite>
+    

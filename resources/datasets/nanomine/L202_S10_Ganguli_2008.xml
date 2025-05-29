@@ -1,0 +1,658 @@
+<PolymerNanocomposite>
+    <ID>L202_S10_Ganguli_2008</ID>
+    <Control_ID>L202_S1_Ganguli_2008</Control_ID>
+    <SchemaVersion>PNC_schema_041220</SchemaVersion>
+    <DatasetID>5e9708b4c9db0157d0737e82</DatasetID>
+    <SchemaID>5e96dbe7c49dc53363c20305</SchemaID>
+    <DATA_SOURCE>
+        <Citation>
+            <CommonFields>
+                <CitationType>research article</CitationType>
+                <Publication>Carbon</Publication>
+                <Title>Improved thermal conductivity for chemically functionalized exfoliated graphite/epoxy composites</Title>
+                <Author>Ganguli, Sabyasachi</Author>
+                <Author>Roy, Ajit K.</Author>
+                <Author>Anderson, David P.</Author>
+                <Publisher>Pergamon</Publisher>
+                <PublicationYear>2008</PublicationYear>
+                <DOI>10.1016/j.carbon.2008.02.008</DOI>
+                <Volume>46</Volume>
+                <URL>https://www.sciencedirect.com/science/article/pii/S000862230800078X?via%3Dihub</URL>
+                <Language>English</Language>
+                <Location>AFRL, 2941 Hobson Way, Dayton, OH 45433, USA</Location>
+                <DateOfCitation>2017-08-10</DateOfCitation>
+            </CommonFields>
+            <CitationType>
+                <Journal>
+                    <ISSN>0008-6223</ISSN>
+                    <Issue>5</Issue>
+                </Journal>
+            </CitationType>
+        </Citation>
+    </DATA_SOURCE>
+    <MATERIALS>
+        <Matrix>
+            <MatrixComponent>
+                <ChemicalName>diglycidyl ether of bisphenol F</ChemicalName>
+                <StdChemicalName>DGEBF Epoxy Resin</StdChemicalName>
+                <uSMILES>C(C(O)COC1=CC=C(CC2=CC=C(O[*])C=C2)C=C1)[*]</uSMILES>
+                <Abbreviation>epoxy</Abbreviation>
+                <TradeName>Epon 862</TradeName>
+                <Density>
+                    <description>inserted from ChemProps, NanoMine</description>
+                    <value>1.16</value>
+                    <unit>g/cm3</unit>
+                </Density>
+            </MatrixComponent>
+            <MatrixProcessing>
+                <ChooseParameter>
+                    <Additive>
+                        <Description>aromatic amine curing agent</Description>
+                        <Additive>Epicure W</Additive>
+                    </Additive>
+                </ChooseParameter>
+                <ChooseParameter>
+                    <Additive>
+                        <Description>accelerating agent</Description>
+                        <Additive>Epicure 537</Additive>
+                    </Additive>
+                </ChooseParameter>
+            </MatrixProcessing>
+        </Matrix>
+        <Filler>
+            <FillerComponent>
+                <ChemicalName>graphite nanoplatelets</ChemicalName>
+                <StdChemicalName>Graphite</StdChemicalName>
+                <Abbreviation>EG</Abbreviation>
+                <ManufacturerOrSourceName>Graftech International Ltd., Parma, OH.</ManufacturerOrSourceName>
+                <Density>
+                    <description>inserted from ChemProps, NanoMine</description>
+                    <value>2.266</value>
+                    <unit>g/cm3</unit>
+                </Density>
+                <FillerComponentInComposite>
+                    <mass>0.16</mass>
+                    <volume>0.088844636770957</volume>
+                </FillerComponentInComposite>
+            </FillerComponent>
+            <FillerProcessing>
+                <ChooseParameter>
+                    <Mixing>
+                        <Description>grafting reaction</Description>
+                        <MixingMethod>high shear mixing</MixingMethod>
+                        <ChemicalUsed>
+                            <description>water</description>
+                        </ChemicalUsed>
+                        <ChemicalUsed>
+                            <description>ethanol</description>
+                        </ChemicalUsed>
+                        <ChemicalUsed>
+                            <description>3-aminopropoxyltriethoxy silane</description>
+                        </ChemicalUsed>
+                        <ChemicalUsed>
+                            <description>EG</description>
+                        </ChemicalUsed>
+                        <Time>
+                            <value>5</value>
+                            <unit>hours</unit>
+                        </Time>
+                        <Temperature>
+                            <value>80</value>
+                            <unit>Celsius</unit>
+                        </Temperature>
+                    </Mixing>
+                </ChooseParameter>
+                <ChooseParameter>
+                    <Drying-Evaporation>
+                        <Description>the product was washed and dried</Description>
+                    </Drying-Evaporation>
+                </ChooseParameter>
+            </FillerProcessing>
+            <FillerComposition>
+                <Fraction>
+                    <mass>
+                        <value>0.16</value>
+                        <source>reported</source>
+                    </mass>
+                    <volume>
+                        <value>0.088844636770957</value>
+                        <source>computed by NanoMine</source>
+                    </volume>
+                </Fraction>
+            </FillerComposition>
+        </Filler>
+    </MATERIALS>
+    <PROCESSING>
+        <SolutionProcessing>
+            <ChooseParameter>
+                <Mixing>
+                    <Description>nanoparticles were dispersed in the epoxy</Description>
+                    <Mixer>FlackTek SpeedMixer DAC 400 FV</Mixer>
+                    <MixingMethod>mechanical mixing</MixingMethod>
+                    <ChemicalUsed>
+                        <description>epoxy</description>
+                    </ChemicalUsed>
+                    <ChemicalUsed>
+                        <description>EG</description>
+                    </ChemicalUsed>
+                    <RPM>
+                        <value>2750</value>
+                    </RPM>
+                    <Time>
+                        <value>8</value>
+                        <unit>minutes</unit>
+                    </Time>
+                </Mixing>
+            </ChooseParameter>
+            <ChooseParameter>
+                <Additive>
+                    <Additive>Epicure W</Additive>
+                </Additive>
+            </ChooseParameter>
+            <ChooseParameter>
+                <Additive>
+                    <Additive>Epicure 537</Additive>
+                </Additive>
+            </ChooseParameter>
+            <ChooseParameter>
+                <Mixing>
+                    <Mixer>FlackTek SpeedMixer DAC 400 FV</Mixer>
+                    <MixingMethod>mechanical mixing</MixingMethod>
+                    <RPM>
+                        <value>1000</value>
+                    </RPM>
+                    <Time>
+                        <value>30</value>
+                        <unit>seconds</unit>
+                    </Time>
+                </Mixing>
+            </ChooseParameter>
+            <ChooseParameter>
+                <Heating>
+                    <Description>curing</Description>
+                    <Temperature>
+                        <value>120</value>
+                        <unit>Celsius</unit>
+                    </Temperature>
+                    <Time>
+                        <value>30</value>
+                        <unit>minutes</unit>
+                    </Time>
+                </Heating>
+            </ChooseParameter>
+        </SolutionProcessing>
+    </PROCESSING>
+    <CHARACTERIZATION>
+        <Scanning_Electron_Microscopy>
+            <EquipmentUsed>FEI Sirion HRSEM</EquipmentUsed>
+            <AcceleratingVoltage>
+                <value>10</value>
+                <unit>kV</unit>
+            </AcceleratingVoltage>
+        </Scanning_Electron_Microscopy>
+        <Dynamic_Mechanical_Analysis>
+            <Equipment>DMA 2980</Equipment>
+            <Description>TA Instruments</Description>
+        </Dynamic_Mechanical_Analysis>
+        <Dielectric_and_Impedance_Spectroscopy_Analysis>
+            <Equipment>4-point conductivity probe acquisition system</Equipment>
+            <Description>Agilent Technologies, Inc.</Description>
+        </Dielectric_and_Impedance_Spectroscopy_Analysis>
+        <XRay_Diffraction_and_Scattering>
+            <Equipment>Rigaku DMAX B horizontal diffractometer</Equipment>
+        </XRay_Diffraction_and_Scattering>
+        <Thermogravimetric_Analysis>
+            <Equipment>Netzsch LFA 457 laser flash thermal diffusivity apparatus</Equipment>
+        </Thermogravimetric_Analysis>
+        <Rheometery>
+            <RheometerType>plate</RheometerType>
+            <Description>Rheometrics, Inc.</Description>
+            <Equipment>ARES rheometer</Equipment>
+        </Rheometery>
+    </CHARACTERIZATION>
+    <PROPERTIES>
+        <Viscoelastic>
+            <DynamicProperties>
+                <MeasurementMethod>DMA</MeasurementMethod>
+                <DMA_mode>
+                    <TemperatureSweep>
+                        <condition>
+                            <frequency>
+                                <value>1</value>
+                                <unit>Hz</unit>
+                            </frequency>
+                            <strainAmplitude>
+                                <value>10</value>
+                                <unit>micrometer</unit>
+                            </strainAmplitude>
+                        </condition>
+                    </TemperatureSweep>
+                </DMA_mode>
+                <DynamicPropertyProfile>
+                    <data>
+                        <description>storage modulus</description>
+                        <data>
+                            <headers>
+                                <column id="0">temperature ( C )</column>
+                                <column id="1">storage modulus (MPa)</column>
+                            </headers>
+                            <rows>
+                                <row id="0">
+                                    <column id="0">40.9523809524</column>
+                                    <column id="1">6672.70821904</column>
+                                </row>
+                                <row id="1">
+                                    <column id="0">56.5079365079</column>
+                                    <column id="1">6186.73354866</column>
+                                </row>
+                                <row id="2">
+                                    <column id="0">71.4285714286</column>
+                                    <column id="1">5650.05330498</column>
+                                </row>
+                                <row id="3">
+                                    <column id="0">88.253968254</column>
+                                    <column id="1">3378.59108826</column>
+                                </row>
+                                <row id="4">
+                                    <column id="0">99.0476190476</column>
+                                    <column id="1">1659.71240775</column>
+                                </row>
+                                <row id="5">
+                                    <column id="0">107.936507937</column>
+                                    <column id="1">840.361868949</column>
+                                </row>
+                                <row id="6">
+                                    <column id="0">118.73015873</column>
+                                    <column id="1">431.984317064</column>
+                                </row>
+                                <row id="7">
+                                    <column id="0">133.968253968</column>
+                                    <column id="1">222.05963536</column>
+                                </row>
+                                <row id="8">
+                                    <column id="0">149.523809524</column>
+                                    <column id="1">171.716159143</column>
+                                </row>
+                                <row id="9">
+                                    <column id="0">165.714285714</column>
+                                    <column id="1">166.599953881</column>
+                                </row>
+                                <row id="10">
+                                    <column id="0">181.904761905</column>
+                                    <column id="1">166.599953881</column>
+                                </row>
+                                <row id="11">
+                                    <column id="0">197.777777778</column>
+                                    <column id="1">169.138712878</column>
+                                </row>
+                                <row id="12">
+                                    <column id="0">213.650793651</column>
+                                    <column id="1">169.138712878</column>
+                                </row>
+                                <row id="13">
+                                    <column id="0">229.206349206</column>
+                                    <column id="1">182.424743316</column>
+                                </row>
+                                <row id="14">
+                                    <column id="0">245.396825397</column>
+                                    <column id="1">212.209679199</column>
+                                </row>
+                            </rows>
+                        </data>
+                    </data>
+                </DynamicPropertyProfile>
+                <DynamicPropertyProfile>
+                    <data>
+                        <description>tan delta</description>
+                        <data>
+                            <headers>
+                                <column id="0">temperature ( C )</column>
+                                <column id="1">tangent delta</column>
+                            </headers>
+                            <rows>
+                                <row id="0">
+                                    <column id="0">40.3628447025</column>
+                                    <column id="1">0.036992481203</column>
+                                </row>
+                                <row id="1">
+                                    <column id="0">54.0058055152</column>
+                                    <column id="1">0.0351879699248</column>
+                                </row>
+                                <row id="2">
+                                    <column id="0">68.229317852</column>
+                                    <column id="1">0.0496240601504</column>
+                                </row>
+                                <row id="3">
+                                    <column id="0">82.4528301887</column>
+                                    <column id="1">0.114586466165</column>
+                                </row>
+                                <row id="4">
+                                    <column id="0">88.8388969521</column>
+                                    <column id="1">0.193984962406</column>
+                                </row>
+                                <row id="5">
+                                    <column id="0">94.0638606676</column>
+                                    <column id="1">0.276992481203</column>
+                                </row>
+                                <row id="6">
+                                    <column id="0">99.2888243832</column>
+                                    <column id="1">0.36</column>
+                                </row>
+                                <row id="7">
+                                    <column id="0">114.092888244</column>
+                                    <column id="1">0.43037593985</column>
+                                </row>
+                                <row id="8">
+                                    <column id="0">128.026124819</column>
+                                    <column id="1">0.383458646617</column>
+                                </row>
+                                <row id="9">
+                                    <column id="0">140.217706821</column>
+                                    <column id="1">0.302255639098</column>
+                                </row>
+                                <row id="10">
+                                    <column id="0">154.150943396</column>
+                                    <column id="1">0.246315789474</column>
+                                </row>
+                                <row id="11">
+                                    <column id="0">168.374455733</column>
+                                    <column id="1">0.21022556391</column>
+                                </row>
+                                <row id="12">
+                                    <column id="0">182.888243832</column>
+                                    <column id="1">0.195789473684</column>
+                                </row>
+                                <row id="13">
+                                    <column id="0">197.111756168</column>
+                                    <column id="1">0.186766917293</column>
+                                </row>
+                                <row id="14">
+                                    <column id="0">210.464441219</column>
+                                    <column id="1">0.174135338346</column>
+                                </row>
+                                <row id="15">
+                                    <column id="0">224.107402032</column>
+                                    <column id="1">0.174135338346</column>
+                                </row>
+                            </rows>
+                        </data>
+                    </data>
+                </DynamicPropertyProfile>
+            </DynamicProperties>
+        </Viscoelastic>
+        <Electrical>
+            <SurfaceResistivity>
+                <value>5126.79</value>
+                <unit>ohm-cm</unit>
+            </SurfaceResistivity>
+        </Electrical>
+        <Thermal>
+            <SpecificHeatCapacity_Cp>
+                <value>1.0</value>
+                <unit>J/gK</unit>
+            </SpecificHeatCapacity_Cp>
+            <ThermalConductivity>
+                <value>3.268</value>
+                <unit>W/mK</unit>
+            </ThermalConductivity>
+            <ThermalDiffusivity>
+                <value>2.644</value>
+                <unit>mm^2/s</unit>
+            </ThermalDiffusivity>
+        </Thermal>
+        <Rheological>
+            <RheologicalViscosity>
+                <DynamicViscosity>
+                    <data>
+                        <description>viscosity vs. temperature</description>
+                        <data>
+                            <headers>
+                                <column id="0">temperature ( C )</column>
+                                <column id="1">viscosity ( cP )</column>
+                            </headers>
+                            <rows>
+                                <row id="0">
+                                    <column id="0">32.3020864437</column>
+                                    <column id="1">517659.267226</column>
+                                </row>
+                                <row id="1">
+                                    <column id="0">35.0529075844</column>
+                                    <column id="1">353364.852594</column>
+                                </row>
+                                <row id="2">
+                                    <column id="0">37.2522581368</column>
+                                    <column id="1">241214.109269</column>
+                                </row>
+                                <row id="3">
+                                    <column id="0">38.9020043297</column>
+                                    <column id="1">183636.662403</column>
+                                </row>
+                                <row id="4">
+                                    <column id="0">42.7613653329</column>
+                                    <column id="1">173888.446509</column>
+                                </row>
+                                <row id="5">
+                                    <column id="0">46.6216594506</column>
+                                    <column id="1">173888.446509</column>
+                                </row>
+                                <row id="6">
+                                    <column id="0">50.4819535682</column>
+                                    <column id="1">173888.446509</column>
+                                </row>
+                                <row id="7">
+                                    <column id="0">53.2411727381</column>
+                                    <column id="1">193931.364939</column>
+                                </row>
+                                <row id="8">
+                                    <column id="0">56.5527956106</column>
+                                    <column id="1">228409.437352</column>
+                                </row>
+                                <row id="9">
+                                    <column id="0">60.414955957</column>
+                                    <column id="1">254736.613271</column>
+                                </row>
+                                <row id="10">
+                                    <column id="0">64.276183189</column>
+                                    <column id="1">269017.191149</column>
+                                </row>
+                                <row id="11">
+                                    <column id="0">68.137410421</column>
+                                    <column id="1">284098.340652</column>
+                                </row>
+                                <row id="12">
+                                    <column id="0">72.5501082413</column>
+                                    <column id="1">300024.941961</column>
+                                </row>
+                                <row id="13">
+                                    <column id="0">76.9609398328</column>
+                                    <column id="1">284098.340652</column>
+                                </row>
+                                <row id="14">
+                                    <column id="0">81.3708383099</column>
+                                    <column id="1">254736.613271</column>
+                                </row>
+                                <row id="15">
+                                    <column id="0">86.3340736041</column>
+                                    <column id="1">254736.613271</column>
+                                </row>
+                                <row id="16">
+                                    <column id="0">91.2991751269</column>
+                                    <column id="1">284098.340652</column>
+                                </row>
+                                <row id="17">
+                                    <column id="0">96.2661428785</column>
+                                    <column id="1">353364.852594</column>
+                                </row>
+                                <row id="18">
+                                    <column id="0">103.438059869</column>
+                                    <column id="1">416187.795029</column>
+                                </row>
+                                <row id="19">
+                                    <column id="0">107.853557032</column>
+                                    <column id="1">517659.267226</column>
+                                </row>
+                                <row id="20">
+                                    <column id="0">111.716650493</column>
+                                    <column id="1">609691.279203</column>
+                                </row>
+                                <row id="21">
+                                    <column id="0">117.784693192</column>
+                                    <column id="1">679966.175678</column>
+                                </row>
+                                <row id="22">
+                                    <column id="0">123.85460212</column>
+                                    <column id="1">845749.914927</column>
+                                </row>
+                                <row id="23">
+                                    <column id="0">129.37304046</column>
+                                    <column id="1">1051953.67679</column>
+                                </row>
+                                <row id="24">
+                                    <column id="0">133.789470738</column>
+                                    <column id="1">1381783.27693</column>
+                                </row>
+                                <row id="25">
+                                    <column id="0">139.306975963</column>
+                                    <column id="1">1627443.50778</column>
+                                </row>
+                                <row id="26">
+                                    <column id="0">142.068994476</column>
+                                    <column id="1">2137712.21377</column>
+                                </row>
+                                <row id="27">
+                                    <column id="0">145.931154822</column>
+                                    <column id="1">2384111.51394</column>
+                                </row>
+                                <row id="28">
+                                    <column id="0">150.900921917</column>
+                                    <column id="1">3492586.79869</column>
+                                </row>
+                                <row id="29">
+                                    <column id="0">156.416560914</column>
+                                    <column id="1">3688381.80881</column>
+                                </row>
+                                <row id="30">
+                                    <column id="0">161.381662437</column>
+                                    <column id="1">4113516.06711</column>
+                                </row>
+                                <row id="31">
+                                    <column id="0">165.795293371</column>
+                                    <column id="1">4587652.61068</column>
+                                </row>
+                                <row id="32">
+                                    <column id="0">169.104116901</column>
+                                    <column id="1">4587652.61068</column>
+                                </row>
+                                <row id="33">
+                                    <column id="0">174.619755897</column>
+                                    <column id="1">4844837.19651</column>
+                                </row>
+                                <row id="34">
+                                    <column id="0">179.034319946</column>
+                                    <column id="1">5706176.1952</column>
+                                </row>
+                                <row id="35">
+                                    <column id="0">186.204370708</column>
+                                    <column id="1">6026065.40348</column>
+                                </row>
+                                <row id="36">
+                                    <column id="0">189.515060466</column>
+                                    <column id="1">6720648.27981</column>
+                                </row>
+                                <row id="37">
+                                    <column id="0">192.277078979</column>
+                                    <column id="1">8827840.62456</column>
+                                </row>
+                                <row id="38">
+                                    <column id="0">193.385618841</column>
+                                    <column id="1">12245780.3021</column>
+                                </row>
+                                <row id="39">
+                                    <column id="0">195.050294864</column>
+                                    <column id="1">22313194.9424</column>
+                                </row>
+                                <row id="40">
+                                    <column id="0">195.062425351</column>
+                                    <column id="1">45343431.3781</column>
+                                </row>
+                                <row id="41">
+                                    <column id="0">196.173764557</column>
+                                    <column id="1">74081940.8799</column>
+                                </row>
+                                <row id="42">
+                                    <column id="0">196.179363243</column>
+                                    <column id="1">102764788.236</column>
+                                </row>
+                                <row id="43">
+                                    <column id="0">197.289769334</column>
+                                    <column id="1">158984079.94</column>
+                                </row>
+                                <row id="44">
+                                    <column id="0">197.298167363</column>
+                                    <column id="1">259747638.257</column>
+                                </row>
+                                <row id="45">
+                                    <column id="0">198.959110929</column>
+                                    <column id="1">380515410.904</column>
+                                </row>
+                                <row id="46">
+                                    <column id="0">200.06951702</column>
+                                    <column id="1">588683084.387</column>
+                                </row>
+                                <row id="47">
+                                    <column id="0">201.178056883</column>
+                                    <column id="1">816607823.537</column>
+                                </row>
+                                <row id="48">
+                                    <column id="0">202.837134219</column>
+                                    <column id="1">1072647074.93</column>
+                                </row>
+                                <row id="49">
+                                    <column id="0">206.702093909</column>
+                                    <column id="1">1408964883.98</column>
+                                </row>
+                                <row id="50">
+                                    <column id="0">211.115724843</column>
+                                    <column id="1">1571366520.25</column>
+                                </row>
+                                <row id="51">
+                                    <column id="0">214.976952075</column>
+                                    <column id="1">1659457594.71</column>
+                                </row>
+                                <row id="52">
+                                    <column id="0">218.838179307</column>
+                                    <column id="1">1752487069.78</column>
+                                </row>
+                                <row id="53">
+                                    <column id="0">221.597398477</column>
+                                    <column id="1">1954484132.24</column>
+                                </row>
+                                <row id="54">
+                                    <column id="0">226.009163183</column>
+                                    <column id="1">1954484132.24</column>
+                                </row>
+                                <row id="55">
+                                    <column id="0">229.317986712</column>
+                                    <column id="1">1954484132.24</column>
+                                </row>
+                                <row id="56">
+                                    <column id="0">236.48710436</column>
+                                    <column id="1">1954484132.24</column>
+                                </row>
+                                <row id="57">
+                                    <column id="0">241.451272768</column>
+                                    <column id="1">2064052845.2</column>
+                                </row>
+                                <row id="58">
+                                    <column id="0">246.415441176</column>
+                                    <column id="1">2179763998.85</column>
+                                </row>
+                            </rows>
+                        </data>
+                    </data>
+                </DynamicViscosity>
+            </RheologicalViscosity>
+        </Rheological>
+    </PROPERTIES>
+</PolymerNanocomposite>
+    

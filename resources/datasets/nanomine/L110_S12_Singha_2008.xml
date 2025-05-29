@@ -1,0 +1,434 @@
+<PolymerNanocomposite>
+    <ID>L110_S12_Singha_2008</ID>
+    <Control_ID>L110_S1_Singha_2008</Control_ID>
+    <SchemaVersion>PNC_schema_041220</SchemaVersion>
+    <DatasetID>5e96ff74c9db0157d0737e44</DatasetID>
+    <SchemaID>5e96dbe7c49dc53363c20305</SchemaID>
+    <DATA_SOURCE>
+        <Citation>
+            <CommonFields>
+                <CitationType>research article</CitationType>
+                <Publication>IEEE Transactions on Dielectrics and Electrical Insulation</Publication>
+                <Title>Dielectric properties of epoxy nanocomposites</Title>
+                <Author>Singha, Santanu</Author>
+                <Author>Thomas, M.</Author>
+                <Publisher>IEEE</Publisher>
+                <PublicationYear>2008</PublicationYear>
+                <DOI>10.1109/T-DEI.2008.4446732</DOI>
+                <Volume>15</Volume>
+                <URL>http://ieeexplore.ieee.org/document/4446732/</URL>
+                <DateOfCitation>2019-05-08</DateOfCitation>
+            </CommonFields>
+            <CitationType>
+                <Journal>
+                    <ISSN>1070-9878</ISSN>
+                    <Issue>1</Issue>
+                </Journal>
+            </CitationType>
+        </Citation>
+    </DATA_SOURCE>
+    <MATERIALS>
+        <Matrix>
+            <MatrixComponent>
+                <ChemicalName>bisphenol-A diglycidyl ether</ChemicalName>
+                <StdChemicalName>DGEBA Epoxy Resin</StdChemicalName>
+                <uSMILES>CC(C)(C1=CC=C(OCC2CO2)C=C1)C3=CC=C(OCC4CO4)C=C3</uSMILES>
+                <Abbreviation>epoxy</Abbreviation>
+                <PlasticType>thermoset</PlasticType>
+                <PolymerType>homopolymer</PolymerType>
+                <ManufacturerOrSourceName>Huntsman</ManufacturerOrSourceName>
+                <TradeName>CY1300</TradeName>
+                <Density>
+                    <description>inserted from ChemProps, NanoMine</description>
+                    <value>1.13</value>
+                    <unit>g/cm3</unit>
+                </Density>
+                <Hardener>HY956</Hardener>
+            </MatrixComponent>
+            <MatrixProcessing>
+                <ChooseParameter>
+                    <Heating>
+                        <Description>degassed epoxy resin and hardener separately in different beakers</Description>
+                        <Temperature>
+                            <value>40</value>
+                            <unit>Celsius</unit>
+                        </Temperature>
+                        <Time>
+                            <value>2</value>
+                            <unit>hours</unit>
+                        </Time>
+                    </Heating>
+                </ChooseParameter>
+            </MatrixProcessing>
+        </Matrix>
+        <Filler>
+            <FillerComponent>
+                <ChemicalName>ZnO</ChemicalName>
+                <StdChemicalName>Zinc oxide</StdChemicalName>
+                <ManufacturerOrSourceName>Sigma Aldrich</ManufacturerOrSourceName>
+                <Density>
+                    <description>inserted from ChemProps, NanoMine</description>
+                    <value>5.61</value>
+                    <unit>g/cm3</unit>
+                </Density>
+                <FillerComponentInComposite>
+                    <mass>0.005</mass>
+                    <volume>0.0010111675853675995</volume>
+                </FillerComponentInComposite>
+            </FillerComponent>
+            <FillerProcessing>
+                <ChooseParameter>
+                    <Drying-Evaporation>
+                        <Temperature>
+                            <value>90</value>
+                            <unit>Celsius</unit>
+                        </Temperature>
+                        <Time>
+                            <value>1</value>
+                            <unit>days</unit>
+                        </Time>
+                    </Drying-Evaporation>
+                </ChooseParameter>
+            </FillerProcessing>
+            <FillerComposition>
+                <Fraction>
+                    <mass>
+                        <value>0.005</value>
+                        <source>reported</source>
+                    </mass>
+                    <volume>
+                        <value>0.0010111675853675995</value>
+                        <source>computed by NanoMine</source>
+                    </volume>
+                </Fraction>
+            </FillerComposition>
+        </Filler>
+    </MATERIALS>
+    <PROCESSING>
+        <MeltMixing>
+            <ChooseParameter>
+                <Mixing>
+                    <Description>hand stir</Description>
+                    <MixingMethod>stirring</MixingMethod>
+                    <ChemicalUsed>
+                        <description>epoxy resin</description>
+                    </ChemicalUsed>
+                    <ChemicalUsed>
+                        <description>ZnO nano-fillers</description>
+                    </ChemicalUsed>
+                </Mixing>
+            </ChooseParameter>
+            <ChooseParameter>
+                <Mixing>
+                    <MixingMethod>mechanical mixing</MixingMethod>
+                    <ChemicalUsed>
+                        <description>epoxy resin</description>
+                    </ChemicalUsed>
+                    <ChemicalUsed>
+                        <description>ZnO nano-fillers</description>
+                    </ChemicalUsed>
+                    <RPM>
+                        <value>700</value>
+                        <unit>rpm</unit>
+                    </RPM>
+                    <Time>
+                        <value>1</value>
+                        <unit>hours</unit>
+                    </Time>
+                </Mixing>
+            </ChooseParameter>
+            <ChooseParameter>
+                <Other>The resin-particle mix is then degassed till the air bubbles stopped coming out of the mix.</Other>
+            </ChooseParameter>
+            <ChooseParameter>
+                <Mixing>
+                    <MixingMethod>ultra-sonication</MixingMethod>
+                    <ChemicalUsed>
+                        <description>resin-particle mixture</description>
+                    </ChemicalUsed>
+                </Mixing>
+            </ChooseParameter>
+            <ChooseParameter>
+                <Mixing>
+                    <MixingMethod>stirring</MixingMethod>
+                    <ChemicalUsed>
+                        <description>resin-particle mixture</description>
+                    </ChemicalUsed>
+                    <ChemicalUsed>
+                        <description>hardener</description>
+                    </ChemicalUsed>
+                </Mixing>
+            </ChooseParameter>
+            <ChooseParameter>
+                <Other>The mixture is poured into the mold and again degassed till the air bubbles fully stopped coming out of the material.</Other>
+            </ChooseParameter>
+            <ChooseParameter>
+                <Molding>
+                    <MoldingInfo>
+                        <Temperature>
+                            <value>60</value>
+                            <unit>Celsius</unit>
+                        </Temperature>
+                        <Time>
+                            <value>4</value>
+                            <unit>hours</unit>
+                        </Time>
+                        <AmbientCondition>vacuum</AmbientCondition>
+                    </MoldingInfo>
+                </Molding>
+            </ChooseParameter>
+            <ChooseParameter>
+                <Drying-Evaporation>
+                    <Description>before dielectric property measurements</Description>
+                    <Time>
+                        <value>1</value>
+                        <unit>days</unit>
+                    </Time>
+                    <AmbientCondition>vacuum</AmbientCondition>
+                </Drying-Evaporation>
+            </ChooseParameter>
+        </MeltMixing>
+    </PROCESSING>
+    <CHARACTERIZATION>
+        <Scanning_Electron_Microscopy>
+            <EquipmentUsed>JEOL field emission scanning electron microscope</EquipmentUsed>
+        </Scanning_Electron_Microscopy>
+        <Dielectric_and_Impedance_Spectroscopy_Analysis>
+            <Equipment>Agilent impedance analyzer with 16451B dielectric test fixture</Equipment>
+        </Dielectric_and_Impedance_Spectroscopy_Analysis>
+        <Differential_Scanning_Calorimetry>
+            <Equipment>Mettler Differential Scanning Calorimetry (DSC) equipment</Equipment>
+            <HeatingRate>
+                <value>5</value>
+                <unit>deg C/min</unit>
+            </HeatingRate>
+        </Differential_Scanning_Calorimetry>
+    </CHARACTERIZATION>
+    <PROPERTIES>
+        <Viscoelastic>
+            <DynamicProperties>
+                <DynamicPropertyProfile>
+                    <data>
+                        <AxisLabel>
+                            <xName>Frequency</xName>
+                            <xUnit>Hz</xUnit>
+                            <yName>Tan Delta</yName>
+                        </AxisLabel>
+                        <data>
+                            <headers>
+                                <column id="0">Frequency (Hz)</column>
+                                <column id="1">tan delta</column>
+                            </headers>
+                            <rows>
+                                <row id="0">
+                                    <column id="0">390.141941614</column>
+                                    <column id="1">0.0200716175098</column>
+                                </row>
+                                <row id="1">
+                                    <column id="0">1007.47692042</column>
+                                    <column id="1">0.0242007537775</column>
+                                </row>
+                                <row id="2">
+                                    <column id="0">4865.55761857</column>
+                                    <column id="1">0.0285315168908</column>
+                                </row>
+                                <row id="3">
+                                    <column id="0">9881.97412011</column>
+                                    <column id="1">0.0334524653366</column>
+                                </row>
+                                <row id="4">
+                                    <column id="0">73178.0030577</column>
+                                    <column id="1">0.039562644791</column>
+                                </row>
+                                <row id="5">
+                                    <column id="0">100054.253365</column>
+                                    <column id="1">0.0406291276235</column>
+                                </row>
+                                <row id="6">
+                                    <column id="0">284174.27809</column>
+                                    <column id="1">0.0386761782096</column>
+                                </row>
+                                <row id="7">
+                                    <column id="0">384630.900832</column>
+                                    <column id="1">0.0382407247329</column>
+                                </row>
+                                <row id="8">
+                                    <column id="0">478926.750324</column>
+                                    <column id="1">0.0375924069016</column>
+                                </row>
+                                <row id="9">
+                                    <column id="0">590123.387869</column>
+                                    <column id="1">0.0371588983783</column>
+                                </row>
+                                <row id="10">
+                                    <column id="0">774117.71987</column>
+                                    <column id="1">0.0367240932195</column>
+                                </row>
+                            </rows>
+                        </data>
+                    </data>
+                </DynamicPropertyProfile>
+            </DynamicProperties>
+        </Viscoelastic>
+        <Electrical>
+            <AC_DielectricDispersion>
+                <DielectricDispersionDependence>
+                    <FrequencyDependence>
+                        <condition>
+                            <temperature>
+                                <value>27</value>
+                                <unit>Celsius</unit>
+                            </temperature>
+                        </condition>
+                    </FrequencyDependence>
+                </DielectricDispersionDependence>
+                <Dielectric_Real_Permittivity>
+                    <data>
+                        <AxisLabel>
+                            <xName>Frequency</xName>
+                            <xUnit>Hz</xUnit>
+                            <yName>Relative Permittivity</yName>
+                        </AxisLabel>
+                        <data>
+                            <headers>
+                                <column id="0">Frequency (Hz)</column>
+                                <column id="1">Permittivity</column>
+                            </headers>
+                            <rows>
+                                <row id="0">
+                                    <column id="0">392.396130254</column>
+                                    <column id="1">4.33303437967</column>
+                                </row>
+                                <row id="1">
+                                    <column id="0">984.00945897</column>
+                                    <column id="1">4.24932735426</column>
+                                </row>
+                                <row id="2">
+                                    <column id="0">4955.81700697</column>
+                                    <column id="1">4.12675635277</column>
+                                </row>
+                                <row id="3">
+                                    <column id="0">9849.88698428</column>
+                                    <column id="1">4.06098654709</column>
+                                </row>
+                                <row id="4">
+                                    <column id="0">49095.5761447</column>
+                                    <column id="1">3.90254110613</column>
+                                </row>
+                                <row id="5">
+                                    <column id="0">73359.6310654</column>
+                                    <column id="1">3.8576980568</column>
+                                </row>
+                                <row id="6">
+                                    <column id="0">98642.0449775</column>
+                                    <column id="1">3.78594917788</column>
+                                </row>
+                                <row id="7">
+                                    <column id="0">196011.728597</column>
+                                    <column id="1">3.7620328849</column>
+                                </row>
+                                <row id="8">
+                                    <column id="0">299156.590681</column>
+                                    <column id="1">3.70523168909</column>
+                                </row>
+                                <row id="9">
+                                    <column id="0">397923.679107</column>
+                                    <column id="1">3.68430493274</column>
+                                </row>
+                                <row id="10">
+                                    <column id="0">491552.975714</column>
+                                    <column id="1">3.67234678625</column>
+                                </row>
+                                <row id="11">
+                                    <column id="0">594538.902753</column>
+                                    <column id="1">3.65440956652</column>
+                                </row>
+                                <row id="12">
+                                    <column id="0">667830.761886</column>
+                                    <column id="1">3.64245142003</column>
+                                </row>
+                                <row id="13">
+                                    <column id="0">799249.466179</column>
+                                    <column id="1">3.62750373692</column>
+                                </row>
+                            </rows>
+                        </data>
+                    </data>
+                </Dielectric_Real_Permittivity>
+                <Dielectric_Loss_Tangent>
+                    <data>
+                        <AxisLabel>
+                            <xName>Frequency</xName>
+                            <xUnit>Hz</xUnit>
+                            <yName>Tan Delta</yName>
+                        </AxisLabel>
+                        <data>
+                            <headers>
+                                <column id="0">Frequency (Hz)</column>
+                                <column id="1">tan delta</column>
+                            </headers>
+                            <rows>
+                                <row id="0">
+                                    <column id="0">390.141941614</column>
+                                    <column id="1">0.0200716175098</column>
+                                </row>
+                                <row id="1">
+                                    <column id="0">1007.47692042</column>
+                                    <column id="1">0.0242007537775</column>
+                                </row>
+                                <row id="2">
+                                    <column id="0">4865.55761857</column>
+                                    <column id="1">0.0285315168908</column>
+                                </row>
+                                <row id="3">
+                                    <column id="0">9881.97412011</column>
+                                    <column id="1">0.0334524653366</column>
+                                </row>
+                                <row id="4">
+                                    <column id="0">73178.0030577</column>
+                                    <column id="1">0.039562644791</column>
+                                </row>
+                                <row id="5">
+                                    <column id="0">100054.253365</column>
+                                    <column id="1">0.0406291276235</column>
+                                </row>
+                                <row id="6">
+                                    <column id="0">284174.27809</column>
+                                    <column id="1">0.0386761782096</column>
+                                </row>
+                                <row id="7">
+                                    <column id="0">384630.900832</column>
+                                    <column id="1">0.0382407247329</column>
+                                </row>
+                                <row id="8">
+                                    <column id="0">478926.750324</column>
+                                    <column id="1">0.0375924069016</column>
+                                </row>
+                                <row id="9">
+                                    <column id="0">590123.387869</column>
+                                    <column id="1">0.0371588983783</column>
+                                </row>
+                                <row id="10">
+                                    <column id="0">774117.71987</column>
+                                    <column id="1">0.0367240932195</column>
+                                </row>
+                            </rows>
+                        </data>
+                    </data>
+                </Dielectric_Loss_Tangent>
+            </AC_DielectricDispersion>
+            <VolumeResistivity>
+                <description>mean from samples</description>
+                <value>261790737639911420</value>
+                <unit>ohm-cm</unit>
+            </VolumeResistivity>
+        </Electrical>
+        <Thermal>
+            <GlassTransitionTemperature>
+                <value>62.4</value>
+                <unit>Celsius</unit>
+            </GlassTransitionTemperature>
+        </Thermal>
+    </PROPERTIES>
+</PolymerNanocomposite>
+    
