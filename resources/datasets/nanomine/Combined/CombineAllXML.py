@@ -1,15 +1,20 @@
 import os
 import re
 
+# The current Directory
 print(os.getcwd())
 
 def main() -> None:
     print("Combining all XML files...")
+
+    # The directory where the XMLs are stored
     directory:str = f"{os.getcwd()}/../"
 
+    # Output CSV
     combinedPath:str = f"{os.getcwd()}/Combined.csv"
     combined = open(combinedPath, 'a')
 
+    # For each file in the XML directory, find the contents and write to the combined file
     for fileName in os.listdir(directory):
         if fileName.endswith(".xml"):
             print(fileName)
@@ -26,6 +31,10 @@ def grabContents(file, fileName) -> str:
     Publication:str = "N/A"
     Title:str = "N/A"
     Volume: str = "N/A"
+
+    # For each line in the file, grab the DOI, Publication, Title, and Volume
+    # Combine all of these into a single string with the original file name
+    # Return this string
     with file:
         for line in file:
             line = line.strip()
@@ -52,7 +61,9 @@ def grabContents(file, fileName) -> str:
     content = f"{DOI}\t{Publication}\t{Title}\t{Volume}\t{fileName}"
     return content
 
+
 def cleanStr(string:str) -> str:
+    # Only grabs the content between ">" and "<"
     clean = re.search(r'>(.*?)<', string)
     return clean.group(1)
 
