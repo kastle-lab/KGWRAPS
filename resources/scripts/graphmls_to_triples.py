@@ -4,7 +4,7 @@ import os
 schema_dirname_graphml = "../../schema/diagrams/domain_schemas/graphml"
 schema_dir_graphml = os.fsencode(schema_dirname_graphml)
 
-schema_dirname_csv = "../../schema/diagrams/domain_schemas/csv"
+schema_dirname_csv = "../../schema/diagrams/domain_schemas/csv2"
 
 # run code
 for graphml in os.listdir(schema_dir_graphml):

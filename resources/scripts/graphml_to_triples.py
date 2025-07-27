@@ -30,7 +30,8 @@ def get_edge_label(edge_elem):
     label_elem = edge_elem.find('.//y:EdgeLabel', namespaces)
     if label_elem is not None and label_elem.text:
         return ' '.join(label_elem.text.strip().split())
-    return edge_elem.attrib.get('type', 'relatedTo')
+    # return edge_elem.attrib.get('type', 'relatedTo')
+    return edge_elem.attrib.get('type', 'subClassOf')
 
 def sanitize(value):
     if isinstance(value, str):
@@ -102,7 +103,8 @@ for edge in root.findall('.//g:edge', graphml_ns):
 # === Step 4: Add explicit containment relationships ===
 for group_label, members in group_members.items():
     for member in members:
-        triples.append((member, 'relatedTo', group_label))
+        # triples.append((member, 'relatedTo', group_label))
+        triples.append((member, 'subClassOf', group_label))
 
 # === Step 5: Deduplicate and export ===
 triples = list(set(triples))

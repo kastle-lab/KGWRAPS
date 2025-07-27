@@ -38,6 +38,6 @@ def merge_csv_files(directory, output_file):
     merged_df.to_csv(output_file, index=False)
 
 # Example usage:
-directory_path = "../../schema/diagrams/domain_schemas/csv"
-output_file_path = "../../schema/diagrams/domain_schemas/csv/triples.csv"
+directory_path = "../../schema/diagrams/domain_schemas/csv2"
+output_file_path = "../../schema/diagrams/domain_schemas/csv2/triples.csv"
 merge_csv_files(directory_path, output_file_path)
